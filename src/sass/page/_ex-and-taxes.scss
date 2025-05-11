@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.ex-and-taxes{
+    padding-bottom: rem(80);
+    &__heading{
+        text-align: center;
+        color: rgba(235, 97, 0);
+        margin-top: rem(80);
+        margin-bottom: rem(30);
+    }
+}
+
+.ex-and-taxes-table{
+    width: 100%;
+    border-collapse: collapse;
+    &__item--title{
+        width: 100%;
+        background-color: rgba(235, 97, 0);
+        text-align: left;
+        color: #fff;
+        border: 1px solid rgba(235, 97, 0);
+        
+        
+    }
+    &__title{
+        width: 100%;
+        padding: rem(25) rem(30);
+    }
+    &__heading{
+        width: 25%;
+        border-left: 1px solid rgba(235, 97, 0);
+        border-bottom: 1px solid rgba(235, 97, 0);
+        border-right: 1px solid rgba(235, 97, 0);
+        padding-top: rem(18);
+        padding-bottom: rem(18);
+        padding-left: rem(30);
+    }
+    &__text{
+        border: 1px solid rgba(235, 97, 0);
+        width: 75%;
+        padding-top: rem(18);
+        padding-bottom: rem(18);
+        padding-left: rem(30);
+        border-bottom: 1px solid rgba(235, 97, 0);
+        border-right: 1px solid rgba(235, 97, 0);
+    }
+    
+}

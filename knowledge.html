@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>アルカンジュ不動産</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script defer src="./js/script_fixed.js"></script>
+  <!-- <script defer src="./js/slider.js"></script> -->
+</head>
+<body>
+  <header>
+    <!-- ----------------------------->
+    <!--        PC版　ヘッダー       -->
+    <!-- ----------------------------->
+    <header class="header-pc inner-1920 sp-none">
+      <div class="header-top">
+        <h1 class="logo header-top__logo">
+          <figure>
+            <img src="./images/common/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+        </h1>
+        <div class="header-top__right">
+          <div class="header-top__tel">
+            <div class="header-top__name jpfont-13-normal font-color-bk">
+              お電話での問い合わせ
+            </div>
+            <div class="header-top__btn--tel egfont-19-normal font-color-bk">
+              <a href="tel:0120505642">
+                <img src="./images/common/header-tel.png" alt="電話のアイコン">
+                <span class="egfont-19-normal font-color-bk">0120-565-642</span>
+              </a>
+            </div>
+            <div class="header-top__opentime jpfont-18-normal">
+              <span class="jpfont-13-normal font-color-bk">平日：</span>
+              <span class="egfont-13-normal font-color-bk">9:00～17:00</span>
+          
+            </div>
+          </div>
+          <div class="header-top__saiyo">
+            <div class="btn bg-orange-btn header-top__btn header-top__btn--saiyo ">
+              <a href="">
+                <span class="jpfont-13-normal ">採用情報</span>
+              </a>
+            </div>
+          </div>
+          <div class="header-top__contact">
+            <div class="header-top__name jpfont-13-normal font-color-bk">
+              メールでの問い合わせ
+            </div>
+            <div class="btn bg-orange-btn header-top__btn header-top__btn--contact">
+              <a href="">
+                <span class="jpfont-13-normal">お問い合わせ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav header-nav-pc">
+        <div class="header-nav__item header-nav__item--home">
+          <a href="" class="egfont-12-normal font-color-bk">
+            HOME
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="page-Buying.html"  class="jpfont-12-normal font-color-bk">
+            不動産を買う　▼
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            不動産を売る　▼
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            不動産を借りる
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            私たちの強み
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            会社案内
+          </a>
+        </div>
+        <div class="header-nav__item header-nav__item--end">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            プライバシーポリシー
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- ----------------------------->
+    <!--        sp版　ヘッダー       -->
+    <!-- ----------------------------->
+    <div class="header-sp pc-none">
+      <div class="header-sp__wrapper">
+        <h1 class="logo header-sp__logo">
+          <figure>
+            <img src="./images/topsp/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+        </h1>
+        <div class="drawer-menu" id="MenuButton">
+          <div class="drawer-menu__btn" >
+            <span class="drawer-menu__btn--line"></span>
+            <span class="drawer-menu__btn--line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-sp-nav  js-drawer-open">
+    <ul class="header-sp-nav__list">
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal"  >不動産を買う</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >不動産を売る</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >不動産を借りる</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >私たちの強み</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >会社案内</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >プライバシーポリシー</a></li>
+    </ul>
+    <div class="header-sp-top__right">
+      <div class="header-sp-top__tel">
+        <div class="header-sp-top__name jpfont-13-normal font-color-bk">
+          お電話での問い合わせ
+        </div>
+        <div class="header-top__btn--tel egfont-19-normal font-color-bk">
+          <a href="tel:0120505642">
+            <img src="./images/common/header-tel.png" alt="電話のアイコン">
+            <span class="egfont-19-normal font-color-bk">0120-565-642</span>
+          </a>
+        </div>
+        <div class="header-top__opentime jpfont-18-normal">
+          <span class="jpfont-13-normal font-color-bk">平日：</span>
+          <span class="egfont-13-normal font-color-bk">9:00～17:00</span>
+      
+        </div>
+      </div>
+      <div class="header-top__contact header-sp-top__contact">
+        <div class="header-top__name jpfont-13-normal font-color-bk">
+          メールでの問い合わせ
+        </div>
+        <div class="btn bg-orange-btn header-top__btn header-top__btn--contact">
+          <a href="">
+            <!-- <img src="./images/common/header-mail.png" alt="メールお問い合わせの画像"> -->
+            <span class="jpfont-13-normal">お問い合わせ</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-top__saiyo header-sp-top__saiyo">
+        <div class="btn bg-orange-btn header-top__btn header-top__btn--saiyo ">
+          <a href="">
+            <span class="jpfont-13-normal ">採用情報</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <!-- ----------------------------->
+    <!--     　 メインビュー   　    -->
+    <!-- ----------------------------->
+
+    <!-- ----------------------------->
+    <!--  ファーストビュー下のバナー   -->
+    <!-- ----------------------------->
+    <section class="fv-banners">
+        <div class="inner-900">
+            <ul class="fv-banner fv-banner-3">
+                <li class="fv-banner__list">
+                    <a href="#">
+                        <img class="pc-img" src="./images/knowledge/Knowledge-fv__banner01.png" alt="不動産を買うの画像">
+                        <img class="sp-img" src="./images/knowledge/Knowledge-spfv__banner01.png" alt="不動産を買うの画像">
+                    </a>
+                </li>
+                <li class="fv-banner__list">
+                    <a href="#">
+                        <img class="pc-img" src="./images/knowledge/Knowledge-fv__banner02.png" alt="不動産を売るの画像">
+                        <img class="sp-img" src="./images/knowledge/Knowledge-spfv__banner02.png" alt="不動産を買うの画像">
+                    </a>
+                </li>
+                <li class="fv-banner__list">
+                  <a href="#">
+                    <img class="pc-img" src="./images/knowledge/Knowledge-fv__bannersp03.png" alt="私たちの強みの画像">
+                    <img class="sp-img" src="./images/knowledge/Knowledge-spfv__banner03.png" alt="不動産を買うの画像">
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ----------------------------->
+    <!--　　    諸経費と税金　　　　   -->
+    <!-- ----------------------------->
+    <section class="ex-and-taxes" id="Ex-and-taxes">
+        <div class="inner-1000">
+            <h2 class="section__title text-center">
+                <div class="section__title--eg egfont-92-black">Expenses and taxes </div>
+                <div class="section__title--jp jpfont-36-black font-color-or">諸経費と税金</div>
+            </h2>
+            <!-- 主な購入諸経費 -->
+            <h3 class="ex-and-taxes__heading">主な購入諸経費</h3>
+            <table class="ex-and-taxes-table">
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">手当金</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >支払先</td>
+                    <td class="ex-and-taxes-table__text">売主</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >費用の概算</td>
+                    <td class="ex-and-taxes-table__text">売買契約時に売買代金の5%~10%程度</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >備考</td>
+                    <td class="ex-and-taxes-table__text">残代金支払時に売買代金に充当されます</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">固定資産税など精算金</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >支払先</td>
+                    <td class="ex-and-taxes-table__text">売主</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >費用の概算</td>
+                    <td class="ex-and-taxes-table__text">年税額を引渡し日をもって日割清算</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >備考</td>
+                    <td class="ex-and-taxes-table__text">4月1日または1月1日を起算日とします</td>
+                </tr>
+                                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">登記費用</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >支払先</td>
+                    <td class="ex-and-taxes-table__text">司法書士等</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >費用の概算</td>
+                    <td class="ex-and-taxes-table__text">登録免許税および司法書士等への報酬等</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >備考</td>
+                    <td class="ex-and-taxes-table__text">
+                          司法書士の手配は仲介業者にご相談下さい。<br>
+                        ※新築戸建の場合、表示登記費用がかかります。
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">火災保険料</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >支払先</td>
+                    <td class="ex-and-taxes-table__text">保険会社または代理店</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >費用の概算</td>
+                    <td class="ex-and-taxes-table__text">建物の評価から決定されます</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >備考</td>
+                    <td class="ex-and-taxes-table__text">
+                          詳細は保険会社または保険代理店にご相談下さい
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">修繕積立金・管理費清算金(マンション等の場合)</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >支払先</td>
+                    <td class="ex-and-taxes-table__text">売主</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >費用の概算</td>
+                    <td class="ex-and-taxes-table__text">月額負担金を日割り清算します</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >備考</td>
+                    <td class="ex-and-taxes-table__text">ー</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">修繕積立金・管理費清算金(マンション等の場合)</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >支払先</td>
+                    <td class="ex-and-taxes-table__text">仲介会社</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >備考</td>
+                    <td class="ex-and-taxes-table__text">
+                        取引価格<br>
+                        ●200万円以下×5%＋消費税<br>
+                        ●200万円超〜400万円以下×4%＋2万円＋消費税<br>
+                        ●400万円超×3%＋6万円＋消費税
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">手数料</th>
+                </tr>
+                 <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >銀行事務手数料</td>
+                    <td class="ex-and-taxes-table__text">銀行</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >住宅ローン代行手数料</td>
+                    <td class="ex-and-taxes-table__text">仲介会社(※必要書類取得代行します)</td>
+                </tr>
+            </table>
+            <!-- 不動産に関する税金の一覧 -->
+            <h3 class="ex-and-taxes__heading">不動産に関する税金の一覧</h3>
+            <table class="ex-and-taxes-table">
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">手当金</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >印紙税</td>
+                    <td class="ex-and-taxes-table__text">売買・請負 金銭消費貸借契約書</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text">
+                        500万円超1,000万円以下・・・・・・1万円<br>
+                        1,000万円超5,000万円以下・・・・・・2万円<br>
+                        5,000万円超1億円以下・・・・・・6万円
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    <td class="ex-and-taxes-table__text">
+                        売買・請負契約書について<br>
+                        1,000万円超5,000万円以下は1万円に軽減<br>
+                        5,000万円超1億円以下は3万円に軽減 印紙の貼付、消印による納付
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">印紙の貼付、消印による納付</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">登録免許税</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">不動産登記</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text" rowspan="2">
+                        所有権保存0.4%・・・・・・新築住宅0.15%に軽減<br>
+                        売買による所有権移転(2%)・・・・・・中古住宅　0.3%(土地は1.5%)に軽減<br>
+                        抵当権設定0.4%・・・・・・新築住宅0.1%に軽減、中古住宅0.1%に軽減
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">不動産取得税</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">不動産の取得(購入・建築など)</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text">4%</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    <td class="ex-and-taxes-table__text">土地・家屋(住宅)は3%、家屋(非住宅)は4%</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">取得してから一定期間内に申告</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">不動産取得税</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">不動産の所有</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text">1.4%(標準税率)</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    <td class="ex-and-taxes-table__text">新築住宅の軽減、住宅用地の軽減</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">年4回納期</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">都市計画税</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">不動産の所有</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text">0.3%(制限税率)</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    <td class="ex-and-taxes-table__text">住宅用地の軽減</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">固定資産税と一括納付</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">譲渡所得税(住民税)</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">不動産の売却、不動産所得</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text">分離課税・総合課税</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    <td class="ex-and-taxes-table__text">居住用の特別控除と買い換え特例</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">確定申告</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">住宅譲渡損失の繰越控除</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">一定の住宅の譲渡と買いかえ</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text" rowspan="2">
+                        還付・減税一当初1年間は損益通算し、<br>
+                        それでも赤字が残る場合は、その後3年間繰越控除
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">確定申告</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">贈与税</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">不動産の贈与、資産の贈与など</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text">贈与税の累進税率による</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    <td class="ex-and-taxes-table__text">配偶者控除の特例、相続時精算課税の特例</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">翌年2月1日から3月15日までに申告</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">相続税</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">不動産などの相続による取得</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text">(3,000万円+600万円×法定相続人の数)を超える場合に相続税の累進税率で課税</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    <td class="ex-and-taxes-table__text">配偶者に対する税額軽減、小規模宅地等の特例</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">被相続人が死亡したことを知った日の翌日から10ヶ月以内に申告・納付。<br>
+                        延納の特例あり
+                    </td>
+                </tr>
+                 <tr class="ex-and-taxes-table__item ex-and-taxes-table__item--title">
+                    <th class="ex-and-taxes-table__title" colspan="2">住宅ローン控除</th>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >対象</td>
+                    <td class="ex-and-taxes-table__text">住宅の取得や増改築・住宅とともに取得する土地のローン</td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >税率</td>
+                    <td class="ex-and-taxes-table__text" rowspan="2">
+                        一般住宅の場合、10年間、住宅ローンの年末の借入残高×1%
+                    </td>
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >特例</td>
+                    
+                </tr>
+                <tr class="ex-and-taxes-table__item">
+                    <td class="ex-and-taxes-table__heading" >申告・納税</td>
+                    <td class="ex-and-taxes-table__text">確定申告</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- --------------------------------------->
+    <!--　　      不動産購入までの流れ　　　　   -->
+    <!-- --------------------------------------->
+
+    <section class="process" id="process">
+        <div class="inner-1000">
+            <h2 class="section__title text-center">
+                <div class="section__title--eg egfont-51-black">The process for purchasing real estate</div>
+                <div class="section__title--jp jpfont-36-black font-color-or">不動産購入までの流れ</div>
+            </h2>
+            <div class="process-accordion">
+                <details class="process-accordion__item">
+                    <summary>注文住宅　ご検討の方</summary>
+                    <div class="process-accordion__contents">枠線付きのシンプルなアコーディオンメニューです。</div>
+                </details>
+                <details class="process-accordion__item">
+                    <summary>新築戸建・中古戸建　ご検討の方</summary>
+                    <div class="process-accordion__contents">クセがなく、どんなサイトでも使いやすい汎用性があります。</div>
+                </details>
+                <details class="process-accordion__item">
+                    <summary>中古マンション　ご検討の方</summary>
+                    <div class="process-accordion__contents">クセがなく、どんなサイトでも使いやすい汎用性があります。</div>
+                </details>
+            </div>
+        </div>
+        <div class="process-contents02">
+            <div class="process-contents02__bg-white">
+                <p class="process-contents02__text">
+                    不動産会社選びは重要!!<br>
+                    住宅購入にあたり、戸建にするかマンションにするか。<br>
+                    戸建なら注文住宅を建てるか、建売を買うか色々な選択肢があります。<br>
+                    選ぶ不動産会社によっては建築が得意だったり、戸建仲介が得意だったり・・・<br>
+                    まずは最初に相談する不動産会社を選定していきます。
+                </p>
+            </div>
+        </div>
+        <div class="process-contents03">
+            <h4 class="process-contents03__heading">今後の「お家探し」の労力が大幅に変わってきます</h4>
+            <div class="col-2">
+                <figure class="process-contents03__img">
+                    <img src="./images/knowledge/to-process-img01.png" alt="">
+                </figure>
+                <div class="process-contents03__text">
+                    例えば家族構成・ライフスタイル・不動産購入予算等を考え「マンション」がベストなお客様が、自社建築を主とする会社に相談しても中々満足する物件は出てきませんよね？
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ----------------------------->
+    <!--    　フッター上のバナー　　  -->
+    <!-- ----------------------------->
+    <section class="banner">
+      <div class="inner-1200">
+        <ul class="banner__unit">
+          <li class="banner__list">
+            <img src="./images/TOP/banner01.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner02.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner03.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner04.jpg" alt="">
+          </li>
+        </ul>
+        
+      </div>
+    </section>
+  </main>
+    <!-- ----------------------------->
+    <!--    　フッター　　　　　　　  -->
+    <!-- ----------------------------->
+  <footer class="footer bg-orange">
+    <div class="footer__wrapper inner-1200">
+      <div class="pagetop">
+        <a href="#">
+          <img src="./images/common/page-top.png" alt="">
+        </a>
+      </div>
+      <div class="footer__contents">
+        <div class="footer__left">
+          <figure class="logo footer__logo">
+            <img src="./images/common/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+          <div class="footer__sns sp-none">
+            <figure class="footer__icon footer__icon--instagram">
+              <a href="">
+                <img src="./images/common/Instagram_icon.png" class="footer__iconimg" alt="インスタグラムのアイコン画像">
+              </a>
+            </figure>
+            <figure class="footer__icon footer__icon--line">
+              <a href="">
+                <img src="./images/common/LINE_icon.png" class="footer__iconimg" alt="インスタグラムのライン画像">
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="footer__shopinfo">
+          <div class="footer__address jpfont-18-bold font-color-bk">〒264-0020　<span class="sp-br">千葉県千葉市若葉区貝塚2-3-41 クレスト101</span></div>
+          <div class="footer__tel jpfont-18-bold font-color-bk">TEL.043-310-5642　<br> フリーダイヤル：0120-505-642</div>
+        </div>
+        <div class="footer__sns pc-none">
+          <figure class="footer__icon footer__icon--instagram">
+            <a href="">
+              <img src="./images/common/Instagram_icon.png" class="footer__iconimg" alt="インスタグラムのアイコン画像">
+            </a>
+          </figure>
+          <figure class="footer__icon footer__icon--line">
+            <a href="">
+              <img src="./images/common/LINE_icon.png" class="footer__iconimg" alt="インスタグラムのライン画像">
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- サイトマップ -->
+    <div class="footer-nav inner-1200">
+      <ul class="footer-nav__unit colum-04">
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk font-color-bk">HOME</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産を買う</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産を売る</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">私たちの強み</span>
+            </a>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">会社案内</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">社会活動</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">代表者メッセージ</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">スタッフ紹介</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">スタッフブログ</span>
+            </a>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産売買の基礎知識</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産購入までの流れ</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">諸経費と税金</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">ご紹介可能建築業者様</span>
+            </a>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">採用情報</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">プライバシーポリシー</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">お問い合わせ</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">お知らせ</span>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="copyright">
+      <span class="copyright__text font-color-wh ">Copyright &copy;Archange, All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>

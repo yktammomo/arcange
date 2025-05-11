@@ -209,9 +209,21 @@
     font-weight: 700;
 
 }
+.egfont-51-black {
+    font-family: $second-font-family;
+    font-size: rem(18);
+    font-weight: 900;
+
+}
 .egfont-70-black {
     font-family: $second-font-family;
     font-size: rem(50);
+    font-weight: 900;
+
+}
+.egfont-92-black{
+    font-family: $second-font-family;
+    font-size: rem(36);
     font-weight: 900;
 
 }
@@ -244,10 +256,15 @@
     }
     .egfont-16-bold {
         font-size: rem(16);
-    
+    }
+    .egfont-51-black {
+        font-size: rem(51);
     }
     .egfont-70-black {
         font-size: rem(70);
+    }
+    .egfont-92-black{
+        font-size: rem(92);
     }
     .egfont-108-black {
         font-family: $second-font-family;
@@ -340,6 +357,10 @@
 }
 .bg-vw-left{
     width: 100vw;
+}
+
+.col-2{
+    display: flex;
 }
 
 

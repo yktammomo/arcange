@@ -767,10 +767,24 @@ select::-ms-expand {
   font-weight: 700;
 }
 
+.egfont-51-black {
+  font-family: "Jost", serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
 .egfont-70-black {
   font-family: "Jost", serif;
   font-size: 50px;
   font-size: 3.125rem;
+  font-weight: 900;
+}
+
+.egfont-92-black {
+  font-family: "Jost", serif;
+  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 900;
 }
 
@@ -803,8 +817,14 @@ select::-ms-expand {
   .egfont-16-bold {
     font-size: 1rem;
   }
+  .egfont-51-black {
+    font-size: 3.1875rem;
+  }
   .egfont-70-black {
     font-size: 4.375rem;
+  }
+  .egfont-92-black {
+    font-size: 5.75rem;
   }
   .egfont-108-black {
     font-family: "Jost", serif;
@@ -885,6 +905,12 @@ select::-ms-expand {
 
 .bg-vw-left {
   width: 100vw;
+}
+
+.col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer {
@@ -2325,6 +2351,60 @@ main {
     line-height: 2.8125rem;
   }
 }
+.ex-and-taxes {
+  padding-bottom: 80px;
+  padding-bottom: 5rem;
+}
+.ex-and-taxes__heading {
+  text-align: center;
+  color: rgb(235, 97, 0);
+  margin-top: 80px;
+  margin-top: 5rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+
+.ex-and-taxes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ex-and-taxes-table__item--title {
+  width: 100%;
+  background-color: rgb(235, 97, 0);
+  text-align: left;
+  color: #fff;
+  border: 1px solid rgb(235, 97, 0);
+}
+.ex-and-taxes-table__title {
+  width: 100%;
+  padding: 25px 30px;
+  padding: 1.5625rem 1.875rem;
+}
+.ex-and-taxes-table__heading {
+  width: 25%;
+  border-left: 1px solid rgb(235, 97, 0);
+  border-bottom: 1px solid rgb(235, 97, 0);
+  border-right: 1px solid rgb(235, 97, 0);
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
+  padding-left: 30px;
+  padding-left: 1.875rem;
+}
+.ex-and-taxes-table__text {
+  border: 1px solid rgb(235, 97, 0);
+  width: 75%;
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
+  padding-left: 30px;
+  padding-left: 1.875rem;
+  border-bottom: 1px solid rgb(235, 97, 0);
+  border-right: 1px solid rgb(235, 97, 0);
+}
+
 .FAQ {
   padding-top: 60px;
   padding-top: 3.75rem;
@@ -2588,6 +2668,10 @@ details[open] .accordion__question img {
   gap: 0.9375rem;
   margin-bottom: 64px;
   margin-bottom: 4rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
 }
 .fv-banner__list {
   border: 3px solid rgb(243, 152, 1);
@@ -2606,9 +2690,24 @@ details[open] .accordion__question img {
     margin-bottom: 8.625rem;
   }
   .fv-banner__list {
+    max-width: 13.125rem;
     border-radius: 15px;
     -webkit-box-shadow: 10px 10px 0px 0px rgb(243, 152, 1);
             box-shadow: 10px 10px 0px 0px rgb(243, 152, 1);
+  }
+}
+.fv-banner-3 {
+  grid-template-columns: repeat(auto-fit, 45%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .fv-banner-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .Instagram {
@@ -2852,6 +2951,121 @@ details[open] .accordion__question img {
     padding-left: 2.5rem;
   }
 }
+.process {
+  padding-top: 60px;
+  padding-top: 3.75rem;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+}
+
+.process-accordion {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  border-radius: 5px;
+}
+.process-accordion__item {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  border-radius: 0.9375rem;
+}
+
+.process-accordion summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1em 2em;
+  color: #eb6100;
+  font-weight: 700;
+  background-color: #eb6100;
+  border-radius: 0.625rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.process-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.process-accordion summary::before,
+.process-accordion summary::after {
+  width: 3px;
+  height: 0.9em;
+  border-radius: 5px;
+  background-color: #fff;
+  content: "";
+}
+
+.process-accordion summary::before {
+  position: absolute;
+  right: 2em;
+  rotate: 90deg;
+}
+
+.process-accordion summary::after {
+  -webkit-transition: rotate 0.3s;
+  transition: rotate 0.3s;
+}
+
+.process-accordion__item[open] summary::after {
+  rotate: 90deg;
+}
+
+.process-accordion p {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  opacity: 1;
+  margin: 0;
+  padding: 0.3em 2em 1.5em;
+  color: #eb6100;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.process-accordion[open] p {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+  color: #eb6100;
+}
+
+.process-contents02 {
+  width: 100%;
+  background-image: url(../images/knowledge/to-process-bg.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 60px;
+  padding-top: 3.75rem;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+}
+.process-contents02__bg-white {
+  width: 69.4444444444%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 0.9375rem;
+}
+.process-contents02__text {
+  color: #eb6100;
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+  text-align: center;
+  font-weight: 900;
+  line-height: 2;
+}
+
 .new-residence__orange-bg .card01__category {
   color: #EB6100;
   border: 1px solid #EB6100;

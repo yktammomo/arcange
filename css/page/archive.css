@@ -1,0 +1,170 @@
+body {
+  font-family: "Zen Kaku Gothic New", serif;
+}
+
+.pc-none {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  .pc-none {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+  }
+}
+
+.sp-none {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  .sp-none {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 6.125rem;
+  }
+}
+.pc-img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc-img {
+    display: block;
+  }
+}
+
+.sp-img {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .sp-img {
+    display: none;
+  }
+}
+
+.sp-br {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .sp-br {
+    display: inline;
+  }
+}
+
+.archive-residence {
+  width: 100%;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.archive-residence__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.archive-residence__wrapper .new-residence__card {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .archive-residence {
+    margin: 0 auto;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+  .archive-residence__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .archive-residence__wrapper .new-residence__card {
+    width: 80%;
+  }
+  .archive-residence__wrapper .residence-sidebar {
+    width: 20%;
+  }
+}
+.residence-sidebar {
+  margin-left: 30px;
+  margin-left: 1.875rem;
+}
+.residence-sidebar .sidebar-residence {
+  border-radius: 0.625rem;
+}
+.residence-sidebar .sidebar-residence__title {
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+  padding-left: 5px;
+  padding-left: 0.3125rem;
+  background-color: rgba(235, 97, 0, .13);
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.residence-sidebar .sidebar-category__unit {
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+.residence-sidebar .sidebar-category__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  gap: 0.625rem;
+  padding-top: 5px;
+  padding-top: 0.3125rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+}
+.residence-sidebar .sidebar-category__list--orange {
+  background-color: #f5f5f5;
+}
+.residence-sidebar .sidebar-category__list--green {
+  background-color: #f5f5f5;
+}
+.residence-sidebar .sidebar-tag__unit {
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+.residence-sidebar .sidebar-tag__unit a {
+  display: inline-block;
+  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
+  background-color: #f5f5f5;
+  border-radius: 0.625rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+}
+/*# sourceMappingURL=archive.css.map */

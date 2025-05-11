@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>不動産を買う|アルカンジュ不動産</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header>
+    <!-- ----------------------------->
+    <!--        PC版　ヘッダー       -->
+    <!-- ----------------------------->
+    <div class="header-pc inner-1920 sp-none">
+      <div class="header-top">
+        <h1 class="logo header-top__logo">
+          <figure>
+            <img src="./images/common/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+        </h1>
+        <div class="header-top__right">
+          <div class="header-top__tel">
+            <div class="header-top__name jpfont-13-normal font-color-bk">
+              お電話での問い合わせ
+            </div>
+            <div class="header-top__btn--tel egfont-19-normal font-color-bk">
+              <a href="tel:0120505642">
+                <img src="./images/common/header-tel.png" alt="電話のアイコン">
+                <span class="egfont-19-normal font-color-bk">0120-565-642</span>
+              </a>
+            </div>
+            <div class="header-top__opentime jpfont-18-normal">
+              <span class="jpfont-13-normal font-color-bk">平日：</span>
+              <span class="egfont-13-normal font-color-bk">9:00～17:00</span>
+          
+            </div>
+          </div>
+          <div class="header-top__saiyo">
+            <div class="btn bg-orange-btn header-top__btn header-top__btn--saiyo ">
+              <a href="">
+                <span class="jpfont-13-normal ">採用情報</span>
+              </a>
+            </div>
+          </div>
+          <div class="header-top__contact">
+            <div class="header-top__name jpfont-13-normal font-color-bk">
+              メールでの問い合わせ
+            </div>
+            <div class="btn bg-orange-btn header-top__btn header-top__btn--contact">
+              <a href="">
+                <span class="jpfont-13-normal">お問い合わせ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav header-nav-pc">
+        <div class="header-nav__item header-nav__item--home">
+          <a href="" class="egfont-12-normal font-color-bk">
+            HOME
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="page-Buying.html"  class="jpfont-12-normal font-color-bk">
+            不動産を買う　▼
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            不動産を売る　▼
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            不動産を借りる
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            私たちの強み
+          </a>
+        </div>
+        <div class="header-nav__item">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            会社案内
+          </a>
+        </div>
+        <div class="header-nav__item header-nav__item--end">
+          <a href="" class="jpfont-12-normal font-color-bk">
+            プライバシーポリシー
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------->
+    <!--        sp版　ヘッダー       -->
+    <!-- ----------------------------->
+    <div class="header-sp pc-none">
+      <div class="header-sp__wrapper">
+        <h1 class="logo header-sp__logo">
+          <figure>
+            <img src="./images/topsp/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+        </h1>
+        <div class="drawer-menu" id="MenuButton">
+          <div class="drawer-menu__btn" >
+            <span class="drawer-menu__btn--line"></span>
+            <span class="drawer-menu__btn--line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-sp-nav  js-drawer-open">
+    <ul class="header-sp-nav__list">
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal"  >不動産を買う</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >不動産を売る</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >不動産を借りる</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >私たちの強み</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >会社案内</a></li>
+      <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal" >プライバシーポリシー</a></li>
+    </ul>
+    <div class="header-sp-top__right">
+      <div class="header-sp-top__tel">
+        <div class="header-sp-top__name jpfont-13-normal font-color-bk">
+          お電話での問い合わせ
+        </div>
+        <div class="header-top__btn--tel egfont-19-normal font-color-bk">
+          <a href="tel:0120505642">
+            <img src="./images/common/header-tel.png" alt="電話のアイコン">
+            <span class="egfont-19-normal font-color-bk">0120-565-642</span>
+          </a>
+        </div>
+        <div class="header-top__opentime jpfont-18-normal">
+          <span class="jpfont-13-normal font-color-bk">平日：</span>
+          <span class="egfont-13-normal font-color-bk">9:00～17:00</span>
+      
+        </div>
+      </div>
+      <div class="header-top__contact header-sp-top__contact">
+        <div class="header-top__name jpfont-13-normal font-color-bk">
+          メールでの問い合わせ
+        </div>
+        <div class="btn bg-orange-btn header-top__btn header-top__btn--contact">
+          <a href="">
+            <!-- <img src="./images/common/header-mail.png" alt="メールお問い合わせの画像"> -->
+            <span class="jpfont-13-normal">お問い合わせ</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-top__saiyo header-sp-top__saiyo">
+        <div class="btn bg-orange-btn header-top__btn header-top__btn--saiyo ">
+          <a href="">
+            <span class="jpfont-13-normal ">採用情報</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="breadcrumb bg-orange">
+      <ul class="breadcrumb__unit inner-1200">
+        <li class="breadcrumb__list">
+          <a href="">
+              HOME
+          </a>
+        </li>
+        <li class="breadcrumb__list">
+          <a href="">
+              不動産を買う
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <!-- ----------------------------->
+    <!--      下層メインビュー       -->
+    <!-- ----------------------------->
+    <section class="mv">
+      <figure class="mv__img">
+        <img src="./images/Buying/mv-Buying01.jpg" alt="メインビューの画像">
+      </figure>
+    </section>
+      <!-- ----------------------------->
+      <!--  ファーストビュー下のバナー   -->
+      <!-- ----------------------------->
+      <section class="fv-banners">
+        <div class="inner-1200">
+          <ul class="fv-banner">
+            <li class="fv-banner__list">
+              <a href="#">
+                <img class="pc-img" src="./images/Buying/mvbanner-Buying01.png" alt="販売中のおススメ物件">
+                <img class="sp-img" src="./images/Buying/sp/mvbanner-Buyingsp01.png" alt="販売中のおススメ物件">
+              </a>
+            </li>
+            <li class="fv-banner__list">
+              <a href="#">
+                <img class="pc-img" src="./images/Buying/mvbanner-Buying02.png" alt="物件を探す画像">
+                <img class="sp-img" src="./images/Buying/sp/mvbanner-Buyingsp02.png" alt="物件をさがす画像">
+              </a>
+            </li>
+            <li class="fv-banner__list">
+              <a href="#">
+                <img class="pc-img" src="./images/Buying/mvbanner-Buying03.png" alt="私たちの強みの画像">
+                <img class="sp-img" src="./images/Buying/sp/mvbanner-Buyingsp03.png" alt="私たちの強みの画像">
+              </a>
+            </li>
+            <li class="fv-banner__list">
+              <a href="#">
+                <img class="pc-img" src="./images/Buying/mvbanner-Buying04.png" alt="お問い合わせへの画像">
+                <img class="sp-img" src="./images/Buying/sp/mvbanner-Buyingsp04.png" alt="お問い合わせへの画像">
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      <!-- ----------------------------->
+      <!-- 　　　　 新着物件　　　　   -->
+      <!-- ----------------------------->
+      <section  id="new-residence" class="new-residence">
+        <div class="inner-1000">
+            <h2 class="section__title text-center">
+                <div class="section__title--eg egfont-108-black">New</div>
+                <div class="section__title--jp jpfont-36-black font-color-or">新着物件</div>
+            </h2>
+            <ul class="card01 new-residence__card">
+                <li class="card01__list">
+                  <a href="card01__link">
+                    <figure class="card01__img">
+                      <img src="./images/TOP/card01-01.png" alt="">
+                    </figure>
+                    <div class="card01__contents">
+                      <span class="card01__category jpfont-16-bold ">売地</span>
+                      <div class="card01__train jpfont-16-bold font-color-bk">JR総武線「千葉駅」　バス約16分（「矢作台」徒歩約2分)</div>
+                      <div class="card01__place-title jpfont-20-bold font-color-bk">中央区矢作町（矢作町IV）</div>
+                      <div class="card01__price jpfont-20-bold font-color-bk">販売価格： <span class="card01__price--money jpfont-24-bold"> 5,000万円</span></div>
+                      <div class="card01__text jpfont-16-bold font font-color-bk">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキテキストが入ります。テキストが入ります。</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="card01__list">
+                  <figure class="card01__img">
+                    <img src="./images/TOP/card01-01.png" alt="">
+                  </figure>
+                  <div class="card01__contents">
+                    <span class="card01__category jpfont-18-bold">売地</span>
+                    <div class="card01__train jpfont-16-bold font-color-bk">JR総武線「千葉駅」　バス約16分（「矢作台」徒歩約2分)</div>
+                    <div class="card01__place-title jpfont-20-bold font-color-bk">中央区矢作町（矢作町IV）</div>
+                    <div class="card01__price jpfont-20-bold font-color-bk">販売価格： <span class="card01__price--money jpfont-24-bold"> 5,000万円</span></div>
+                    <div class="card01__text jpfont-16-bold font font-color-bk">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキテキストが入ります。テキストが入ります。</div>
+                  </div>
+                </li>
+                <li class="card01__list">
+                  <figure class="card01__img">
+                    <img src="./images/TOP/card01-01.png" alt="">
+                  </figure>
+                  <div class="card01__contents">
+                    <span class="card01__category jpfont-18-bold ">売地</span>
+                    <div class="card01__train jpfont-16-bold font-color-bk">JR総武線「千葉駅」　バス約16分（「矢作台」徒歩約2分)</div>
+                    <div class="card01__place-title jpfont-24-bold font-color-bk">中央区矢作町（矢作町IV）</div>
+                    <div class="card01__price jpfont-24-bold font-color-bk">販売価格： <span class="card01__price--money jpfont-24-bold"> 5,000万円</span></div>
+                    <div class="card01__text jpfont-16-bold font font-color-bk">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキテキストが入ります。テキストが入ります。</div>
+                  </div>
+                </li>
+                <li class="card01__list">
+                  <figure class="card01__img">
+                    <img src="./images/TOP/card01-01.png" alt="">
+                  </figure>
+                  <div class="card01__contents">
+                    <span class="card01__category jpfont-18-bold ">売地</span>
+                    <div class="card01__train jpfont-16-bold font-color-bk">JR総武線「千葉駅」　バス約16分（「矢作台」徒歩約2分)</div>
+                    <div class="card01__place-title jpfont-24-bold font-color-bk">中央区矢作町（矢作町IV）</div>
+                    <div class="card01__price jpfont-24-bold font-color-bk">販売価格： <span class="card01__price--money jpfont-24-bold"> 5,000万円</span></div>
+                    <div class="card01__text jpfont-16-bold font font-color-bk">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキテキストが入ります。テキストが入ります。</div>
+                  </div>
+                </li>
+                <li class="card01__list">
+                  <figure class="card01__img">
+                    <img src="./images/TOP/card01-01.png" alt="">
+                  </figure>
+                  <div class="card01__contents">
+                    <span class="card01__category jpfont-18-bold ">売地</span>
+                    <div class="card01__train jpfont-16-bold font-color-bk">JR総武線「千葉駅」　バス約16分（「矢作台」徒歩約2分)</div>
+                    <div class="card01__place-title jpfont-24-bold font-color-bk">中央区矢作町（矢作町IV）</div>
+                    <div class="card01__price jpfont-24-bold font-color-bk">販売価格： <span class="card01__price--money jpfont-24-bold"> 5,000万円</span></div>
+                    <div class="card01__text jpfont-16-bold font font-color-bk">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキテキストが入ります。テキストが入ります。</div>
+                  </div>
+                </li>
+                <li class="card01__list">
+                  <figure class="card01__img">
+                    <img src="./images/TOP/card01-01.png" alt="">
+                  </figure>
+                  <div class="card01__contents">
+                    <span class="card01__category jpfont-18-bold ">売地</span>
+                    <div class="card01__train jpfont-16-bold font-color-bk">JR総武線「千葉駅」　バス約16分（「矢作台」徒歩約2分)</div>
+                    <div class="card01__place-title jpfont-24-bold font-color-bk">中央区矢作町（矢作町IV）</div>
+                    <div class="card01__price jpfont-24-bold font-color-bk">販売価格： <span class="card01__price--money jpfont-24-bold"> 5,000万円</span></div>
+                    <div class="card01__text jpfont-16-bold font font-color-bk">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキテキストが入ります。テキストが入ります。</div>
+                  </div>
+                </li>
+
+            </ul>
+            <div class="btn top560-btn bg-orange-btn buy-serch__btn">
+              <a href="">
+                <svg class="buy-serch__btn--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" width="27" height="33">
+                  <path d="M28.954 27.546l-7.828-7.828a11.466 11.466 0 002.349-6.954C23.475 6.346 18.129 1 11.738 1S0 6.346 0 12.764c0 6.392 5.346 11.738 11.738 11.738 2.596 0 5.017-.849 6.954-2.348l7.828 7.827a1.015 1.015 0 001.434-1.434zM2.03 12.764c0-5.38 4.375-9.754 9.754-9.754 5.38 0 9.754 4.374 9.754 9.754 0 5.38-4.374 9.754-9.754 9.754-5.38 0-9.754-4.374-9.754-9.754z"/>
+                </svg>
+                <span class="top560-btn__text jpfont-30-bold">物件一覧はこちら</span>
+              </a>
+            </div>
+        </div>
+      </section>
+      <!-- ----------------------------->
+      <!-- 　　　　 物件を探す　　　　   -->
+      <!-- ----------------------------->
+      <section id="Search" class="Search bg-orange">
+        <div class="inner-1000">
+            <h2 class="section__title text-center">
+                <div class="section__title--eg egfont-108-black">Search</div>
+                <div class="section__title--jp jpfont-36-black font-color-or">物件を探す</div>
+                <p class="section__title--text section__searchtitle--text jpfont-18-bold font-color-or">条件から物件をお探しいただけます</p>
+            </h2>
+            <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
+            <!-- 　　　　　エリアからさがす　　　　 -->
+            <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
+            <div class="search-unit area-search">
+              <div class="search-unit__title">
+                <span class="jpfont-20-bold font-color-wh">エリアから探す</span>
+              </div>
+              <!-- ーーーーーーーーーーーーーー -->
+              <!-- 　　　イメージマップ　　　　 -->
+              <!-- ーーーーーーーーーーーーーー -->
+              <div class="image-areamap">
+                <img src="/images/Buying/image-area-map.png" usemap="#ImageMap" alt="" />
+                <map name="ImageMap">
+                  <area shape="poly" coords="132,300,40,362,14,358,8,341,23,327,24,291,14,284,16,248,42,244,57,214,55,202,23,168,24,123,20,109,36,81,63,92,82,95,98,42,127,43,143,52,141,92,153,113,152,123,126,135,102,180,97,204,120,211,130,239,114,245,126,249,128,280,128,280" href="#new-residence" alt="市川・浦安のエリア画像" />
+                  <area shape="poly" coords="155,292,123,212,102,203,106,180,127,134,152,124,152,108,144,94,161,96,177,91,200,100,202,83,197,80,231,43,273,22,278,17,284,2,312,2,324,11,323,41,300,74,292,94,298,140,303,146,295,154,288,188,275,191,274,214,205,211,193,223,158,223,155,265,162,267,164,290,155,291,154,284" href="#" alt="船橋のエリア画像" />
+                  <area shape="poly" coords="231,292,192,291,189,275,196,264,157,264,158,226,193,225,204,209,273,216,278,193,290,191,295,156,319,166,319,191,287,190,276,191,273,217,278,236,259,247,234,286,234,286" href="#" alt="習志野のエリア画像" />
+                  <area shape="poly" coords="340,189,320,187,318,162,294,153,305,146,296,119,291,96,300,70,322,40,323,12,349,8,391,29,409,30,432,45,408,60,418,70,414,121,398,131,405,147,398,157,381,144,354,160,340,188,340,187" href="#" alt="八千代エリア画像" />
+                  <area shape="poly" coords="394,160,383,148,364,155,340,192,281,193,277,231,289,231,265,246,282,259,282,265,305,277,334,291,356,271,366,257,360,248,391,242,391,231,388,228,401,218,405,213,416,210,417,200,413,169,397,159,387,150,387,150" href="#" alt="花見区エリアの画像" />
+                  <area shape="poly" coords="375,356,358,343,347,347,356,367,347,370,323,344,249,342,252,303,267,299,234,282,264,247,278,257,280,264,303,279,308,276,390,342,375,356,344,331" href="#commit" alt="美浜区のエリア画像" />
+                  <area shape="poly" coords="415,312,403,318,403,311,385,322,379,318,372,324,337,294,346,280,359,275,360,265,367,251,362,250,368,247,391,244,396,231,399,222,405,216,415,217,408,223,436,235,455,235,455,239,445,250,435,254,427,251,415,256,414,260,438,263,439,300,411,300,412,309,280,264" href="#" alt="稲毛区エリア画像" />
+                  <area shape="poly" coords="468,449,439,457,383,442,377,436,405,417,358,417,353,390,381,390,397,394,397,379,380,357,389,345,377,325,406,320,418,310,427,327,461,323,453,341,466,345,470,355,488,367,507,385,498,396,505,405,499,415,485,419,484,440,467,449,467,449" href="#" alt="中央区エリア画像" />
+                  <area shape="poly" coords="608,270,580,270,550,233,543,230,529,238,525,277,512,294,500,291,500,286,506,260,489,252,484,243,457,242,454,231,438,230,413,221,423,215,416,207,420,192,412,166,399,161,411,146,401,133,418,121,420,70,413,61,432,47,494,69,516,37,543,33,592,61,594,92,613,125,642,130,655,119,672,134,670,136,656,131,654,190,637,179,627,195,620,207,645,222,624,230,615,266,608,269,608,265" href="#commit" alt="四街道・佐倉エリア画像" />
+                  <area shape="poly" coords="691,380,663,382,662,388,652,392,655,398,652,409,642,408,640,400,633,403,615,395,609,399,608,409,591,398,583,382,568,386,558,399,551,388,552,372,544,370,534,376,524,371,506,383,492,372,492,363,470,350,467,343,458,339,464,321,460,316,427,323,416,303,441,301,441,260,416,258,417,254,420,251,431,255,445,255,455,242,464,247,471,245,483,245,488,255,501,262,497,284,503,293,508,293,521,289,526,281,531,266,532,243,540,234,547,232,556,242,577,273,608,271,612,278,629,278,644,300,643,325,670,341,670,351,693,380,578,340" href="#price" alt="若葉区エリア画像" />
+                  <area shape="poly" coords="692,531,684,432,698,417,696,384,665,383,664,390,658,392,663,398,657,410,641,411,638,403,634,406,619,399,614,403,612,412,589,402,587,395,581,386,571,388,563,399,546,392,546,377,544,375,538,378,530,375,519,380,501,399,507,411,504,415,504,418,488,422,487,442,484,430,489,445,468,454,483,469,510,472,521,474,556,447,581,449,584,474,600,475,598,484,610,497,614,514,655,523,686,519,686,535,686,535" href="#" alt="緑区" />
+                </map>
+              </div>
+
+              <div class="btn top560-btn bg-orange-btn buy-serch__btn another-area__btn">
+                <a href="">
+                  <span class="top560-btn__text jpfont-24-bold">その他のエリアはこちら</span>
+                </a>
+              </div>
+            </div>
+            
+
+  
+            <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
+            <!-- 　　　こだわり条件からさがす　　　　 -->
+            <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
+            <div class="search-unit commit-search" id="commit">
+                <div class="search-unit__title">
+                  <span class="jpfont-20-bold font-color-wh">こだわり条件から探す</span>
+                </div>
+                <div class="commit-search__contents">
+                    <ul class="commit-search__unit">
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search01.png" alt="">
+                            <div class="comimit-search__text">
+                              新築一戸建て
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search02.png" alt="">
+                            <div class="comimit-search__text">
+                              中古一戸建て
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search03.png" alt="">
+                            <div class="comimit-search__text">
+                              中古マンション
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search04.png" alt="">
+                            <div class="comimit-search__text">
+                              建築条件無し売地
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search05.png" alt="">
+                            <div class="comimit-search__text">
+                              建築条件無しの土地
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search06.png" alt="">
+                            <div class="comimit-search__text">
+                              当社限定物件
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search07.png" alt="">
+                            <div class="comimit-search__text">
+                              当社専任紹介
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search08.png" alt="">
+                            <div class="comimit-search__text">
+                              駅徒歩圏内
+                            </div>
+                          </a>
+                        </li>
+                        <li class="commit-search__item">
+                          <a href="">
+                            <img class="commit-search__img" src="./images/Buying/commit/commit-search09.png" alt="">
+                            <div class="comimit-search__text">
+                              収益物件
+                            </div>
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
+            <!-- 　　　　価格帯からさがす　　　　　　 -->
+            <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
+            <div class="search-unit price-search " id="price">
+                <div class="search-unit__title"> <span class="jpfont-20-bold font-color-wh">価格帯から探す</span></div>
+                <div class="price-search__contents">
+                    <ul class="price-search__unit">
+                        <li class="price-search__list"><a href="">~999万円</a></li>
+                        <li class="price-search__list"><a href="">1000万円~1999万円</a></li>
+                        <li class="price-search__list"><a href="">2000万円~2999万円</a></li>
+                        <li class="price-search__list"><a href="">3000万円~3999万円</a></li>
+                        <li class="price-search__list"><a href="">4000万円~</a></li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+      </section>
+      <!-- ----------------------------->
+      <!--      　　私たちの強み　      -->
+      <!-- ----------------------------->
+      <section class="Strength-top Strength-top-lower vivid-orange" id="Strength">
+        <div class="inner-1200">
+          <h2 class="section__title  section__title--news text-center">
+            <div class="section__title--eg egfont-108-black font-color-wh--13">Strength</div>
+            <div class="section__title--jp jpfont-36-black font-color-wh">私たちの強み</div>
+          </h2>
+          <div class="Strength-top__contents">
+            <ul class="group01">
+              <li class="group01__list">
+                <figure class="group01__circle">
+                  <img src="./images/TOP/group-circle01-01.png" alt="私たちの強みアイコン01">
+                </figure>
+                <div class="group01__text jpfont-16-bold font-color-wh">
+                  アルカンジュ不動産は、仕入れ力に自信あり。仕入れ担当者一人ひとりの“目利き”のスキルが高いため、掘り出し物の土地情報を豊富に取り揃えています。「不動産会社を何軒も回ったけど、条件に合う土地が見つからなかった」という方、ぜひご連絡ください！
+                </div>
+              </li>
+              <li class="group01__list">
+                <div class="group01__circle">
+                  <img src="./images/TOP/group-circle01-02.png" alt="私たちの強みアイコン02">
+                </div>
+                <div class="group01__text jpfont-16-bold font-color-wh">
+                  アルカンジュ不動産の基本スタイルは、個人プレーではなく、チームプレー。チーム全体で必ず共有し、全員でアンテナを張っているので、誰かがニーズに合致する土地を見つけたらすぐにお客様に情報提供ができます。
+                </div>
+              </li>
+              <li class="group01__list">
+                <div class="group01__circle">
+                  <img src="./images/TOP/group-circle01-03.png" alt="私たちの強みアイコン03">
+                </div>
+                <div class="group01__text jpfont-16-bold font-color-wh">
+                  土地を購入したお客様に、なるべく余計な負担なくスムーズに家を建てていただけるように、私たちでできる準備は整えた上でお引き渡しする。そこまでが土地のプロの役目だと考えています。
+                </div>
+              </li>
+            </ul>
+          </div>        
+      </div>
+      <div class="inner-1920">
+        <button class="btn top560-btn bg-white-btn Strength-btn ">
+          <a href="">
+            <span class="top560-btn__text  jpfont-24-bold ">もっと詳しく</span>
+          </a>
+        </button>
+        
+      </div>
+      </section>
+    <!-- ----------------------------->
+    <!--    　フッター上のバナー　　  -->
+    <!-- ----------------------------->
+    <section class="banner">
+      <div class="inner-1200">
+        <ul class="banner__unit">
+          <li class="banner__list">
+            <img src="./images/TOP/banner01.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner02.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner03.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner04.jpg" alt="">
+          </li>
+        </ul>
+        
+      </div>
+    </section>
+  </main>
+    <!-- ----------------------------->
+    <!--    　フッター　　　　　　　  -->
+    <!-- ----------------------------->
+  <footer class="footer bg-orange">
+    <div class="footer__wrapper inner-1200">
+      <div class="pagetop">
+        <a href="#">
+          <img src="./images/common/page-top.png" alt="">
+        </a>
+      </div>
+      <div class="footer__contents">
+        <div class="footer__left">
+          <figure class="logo footer__logo">
+            <img src="./images/common/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+          <div class="footer__sns">
+            <figure class="footer__icon footer__icon--instagram">
+              <a href="">
+                <img src="./images/common/Instagram_icon.png" class="footer__iconimg" alt="インスタグラムのアイコン画像">
+              </a>
+            </figure>
+            <figure class="footer__icon footer__icon--line">
+              <a href="">
+                <img src="./images/common/LINE_icon.png" class="footer__iconimg" alt="インスタグラムのライン画像">
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="footer__shopinfo">
+          <div class="footer__address jpfont-18-bold font-color-bk">〒264-0020　千葉県千葉市若葉区貝塚2-3-41 クレスト101</div>
+          <div class="footer__tel jpfont-18-bold font-color-bk">TEL.043-310-5642　<br> フリーダイヤル：0120-505-642</div>
+        </div>
+      </div>
+    </div>
+    <!-- サイトマップ -->
+    <div class="footer-nav inner-1200">
+      <ul class="footer-nav__unit colum-04">
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk font-color-bk">HOME</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産を買う</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産を売る</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">私たちの強み</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">会社案内</span>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">会社案内</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">社会活動</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">代表者メッセージ</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">スタッフ紹介</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">スタッフブログ</span>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産売買の基礎知識</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産購入までの流れ</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">諸経費と税金</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">ご紹介可能建築業者様</span>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">採用情報</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">プライバシーポリシー</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">お問い合わせ</span>
+          </li>
+          <li class="footer-nav__item">
+            <span class="footer-nav__text jpfont-16-bold font-color-bk">お知らせ</span>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="copyright">
+      <span class="copyright__text font-color-wh ">Copyright &copy;Archange, All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>

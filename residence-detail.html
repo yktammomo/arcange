@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>アルカンジュ不動産</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="./js/script_fixed.js"></script>
+</head>
+<body>
+    <div class="breadcrumb bg-orange">
+        <ul class="breadcrumb__unit inner-1200">
+          <li class="breadcrumb__list">
+            <a href="">
+                HOME
+            </a>
+          </li>
+          <li class="breadcrumb__list">
+            <a href="">
+                不動産を買う
+            </a>
+          </li>
+          <li class="breadcrumb__list">
+            <a href="">
+                物件詳細
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    <!-- ----------------------------->
+    <!--      メインビュー       -->
+    <!-- ----------------------------->
+    <section class="mv residence__green-bg">
+        <div class="inner">
+            <h2 class="mv-page-title">
+                <div class="mv-page-title__text--jp">物件詳細</div>
+            </h2>
+        </div>
+    </section>
+    <!-- ----------------------------->
+    <!--      物件詳細　　　　  　　  -->
+    <!-- ----------------------------->
+    <section class="residence residence__green-bg">
+        <div class="residence-contents">
+            <div class="residence-top">
+                <div class="residence-top-left">
+                    <div class="residence-top-left__category">マンション</div>
+                    <div class="residence-top-left__title--jp">ツインエルシティ千葉弐番館</div>
+                </div>
+                <div class="residence-map">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="25" viewBox="0 0 18 25">
+                            <path d="M9,4.746A4.339,4.339,0,1,1,4.7,9.085,4.319,4.319,0,0,1,9,4.746M9,0a9.043,9.043,0,0,1,9,9.085c0,.194-.007.387-.019.578h0l-.008.114v.009c-.4,5.9-5.852,11.385-9.329,15.214C5.678,21.351,1.488,16.13.315,11.473A9.182,9.182,0,0,1,0,9.085,9.043,9.043,0,0,1,9,0" fill-rule="evenodd"/>
+                        </svg>
+                        <span class="residence-map__text">周辺地図</span>
+                    </a>
+                </div>
+            </div>
+            <div class="residence-main-img">
+                <figure class="residence-main-img__img">
+                    <img src="./images/residence-detail/residence-mainimg01.png" alt="物件のメイン画像">
+                </figure>
+            </div>
+            <!-- ================== -->
+            <!-- 詳細画像のスライダー -->
+            <!-- ================== -->
+            <div class="residence-detail-img">
+                <h4 class="residence-detail-heading">
+                    <span class="residence-detail-heading">詳細画像</span>
+                </h4>
+                <div class="residence-detail-img-slider">
+                    <div class="splide slider04" id="slider04">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail01.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail02.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="splide slider04-thumbnails" id="slider04-thumbnail">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 17 39.604">
+                                    <path d="M19.8,0,39.6,17H0Z" transform="translate(0 39.604) rotate(-90)"/></svg>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 17 39.604">
+                                    <path d="M19.8,0,39.6,17H0Z" transform="translate(17) rotate(90)" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="splide__track splide__track--slider04-thumbnails">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail01.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail02.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                                <li class="splide__slide"><img src="./images/residence-detail/residence-detail03.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================== -->
+            <!-- 　　物件の特徴　　　 -->
+            <!-- ================== -->
+            <div class="residence-point">
+                <div class="residence-point__title">
+                    <span class="residence-point__title--jp">物件の特徴</span> 
+                </div>
+                <div class="residence-point__contents">
+                    <div class="residence-point__heading">
+                        人気の角地！日当たり良好！
+                    </div>
+                    <div class="residence-point__text">
+                        ・建築条件なし売地のため、お好きなハウスメーカー様をお選びいただけます。<br>
+                        ・理想のお家を実現することが可能。<br>
+                        ・周辺にもコンビニやスーパーなど買い物施設があり、仕事終わりでも気軽に行けます。
+                    </div>
+                </div>
+            </div>
+            <!-- ================== -->
+            <!-- 　　周辺施設　　　 -->
+            <!-- ================== -->
+            <div class="residence-point">
+                <div class="residence-point__title">
+                    <span class="residence-point__title--jp">周辺施設</span> 
+                </div>
+                <div class="residence-point__contents">
+                    <div class="splide splide-nearby" aria-label="周辺施設のスライダー">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 17 39.604">
+                                    <path d="M19.8,0,39.6,17H0Z" transform="translate(0 39.604) rotate(-90)"/></svg>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 17 39.604">
+                                    <path d="M19.8,0,39.6,17H0Z" transform="translate(17) rotate(90)" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide facility-card">
+                                    <figure class="facility-card__img">
+                                        <img src="./images/residence-detail/facilities01.jpg" alt="施設画像1">
+                                    </figure>
+                                    <div class="facility-card__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+                                </li>
+                                <li class="splide__slide facility-card">
+                                    <figure class="facility-card__img">
+                                        <img src="./images/residence-detail/facilities02.jp" alt="施設画像2">
+                                    </figure>
+                                    <div class="facility-card__text">テキストテキストテキストテキストテキストテキスト</div>
+                                </li>
+                                <li class="splide__slide facility-card">
+                                    <figure class="facility-card__img">
+                                        <img src="./images/residence-detail/facilities03.jp" alt="施設画像3">
+                                    </figure>
+                                    <div class="facility-card__text">テキストテキストテキストテキストテキストテキスト</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================== -->
+            <!-- 　　物件詳細情報　　 -->
+            <!-- ================== -->
+            <div class="residence-detail-info">
+                <h4 class="residence-detail-heading">
+                    <span class="residence-detail-heading">物件詳細情報</span>
+                </h4>
+                <table class="residence-detail-table detail-info__green-bg">
+                    <tr class="residence-detail-table__item residence-detail-table__item--first">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh jpfont-18-bold  font-color-wh ">所在地</th>
+                        <td class="residence-detail-table__body jpfont-18-bold  font-color-bk">
+                            〒264-0020<br>
+                            千葉県千葉市若葉区貝塚町1234-5
+                        </td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">交通</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">土地面積</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">建物面積</th>
+                        <td class="residence-detail-table__body"></td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">用途地域</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">高度地区</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">都市計画</th>
+                        <td class="residence-detail-table__body"></td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">間取り</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">販売数/総数</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">完成</th>
+                        <td class="residence-detail-table__body"></td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">開発許可番号/確認番号</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">土地面積</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">建ぺい率</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">容積率</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">土地権利</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">地目</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">構造</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">現状</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">設備</th>
+                        <td class="residence-detail-table__body"></td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">接道</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">引き渡し日</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">取引態様</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                    <tr class="residence-detail-table__item residence-detail-table__item--end">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">物件価格</th>
+                        <td class="residence-detail-table__body">ここにテキストが入ります</td>
+                    </tr>
+                </table>
+                <div class="residence-detail-caption">
+                    <ul class="residence-detail-caption__unit">
+                        <li class="residence-detail-caption__list">
+                            <span class="residence-detail-caption__text">&#10058; 価格は物件の代金総額を表示しており、消費税が課税される場合は税込み価格です。（1,000円未満は切り上げ。）税率は引き渡し時期により異なりますので、各物件の詳細につきましてはお問い合わせください。</span>
+                            <span class="residence-detail-caption__text">&#10058; 敷地権利が借地権のものは価格に権利金を含みます。</span>
+                            <span class="residence-detail-caption__text">&#10058;  制作中に内容が変更される場合もありますので、あらかじめご了承ください。 </span>
+                            <span class="residence-detail-caption__text">&#10058; 購入の前には物件内容や契約条件についてご自身で十分な確認をしていただくようにお願いいたします。</span>
+                            <span class="residence-detail-caption__text">&#10058;  完成予想図はいずれも外構、植栽、外観等実際のものとは多少異なることがあります。</span>
+                            <span class="residence-detail-caption__text">&#10058;  CG合成の画像の場合、実際とは多少異なる場合があります。</span>
+                            <span class="residence-detail-caption__text">&#10058; 予告物件の場合、本広告を開始するまで予約・契約はできませんが、物件に関する近隣情報、ご質問などはお答えします。お気軽にお問い合わせください。</span>
+                        </li>
+                    </ul>
+
+                </div>
+        </div>
+    </section>
+<!-- ================== -->
+<!-- 　お問合せボタン　　 -->
+<!-- ================== -->
+<section class="contact-section">
+    <div class="inner-1200">
+        <h2 class="section__title text-center contact-section__title">
+            <div class="section__title--eg egfont-108-black">Contact</div>
+            <div class="section__title--jp jpfont-36-black font-color-or">お問い合わせ</div>
+        </h2>
+        <p class="contact-section__text">お問い合わせは下記いずれかからお願いします。</p>
+        <div class="contact-section__contents">
+        <!-- 電話ボタン -->
+            <div class="contact-section__contents-btn contact-section__tel">
+                <a href="tel:0120-505-642" class="contact-section__link contact-section__link--tel">
+                    <!-- tel.svgをインライン埋め込み -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" >
+                        <path d="M94.811 21.696c-35.18 22.816-42.091 94.135-28.809 152.262 10.344 45.266 32.336 105.987 69.42 163.165 34.886 53.79 83.557 102.022 120.669 129.928 47.657 35.832 115.594 58.608 150.774 35.792 17.789-11.537 44.218-43.058 45.424-48.714l-18.899-29.14-51.972-80.135c-3.862-5.955-28.082-.512-40.386 6.457-16.597 9.404-31.882 34.636-31.882 34.636-11.38 6.575-20.912.024-40.828-9.142-24.477-11.262-51.997-46.254-73.9-77.947-20.005-32.923-40.732-72.322-41.032-99.264-.247-21.922-2.341-33.296 8.304-41.006 0 0 29.272-3.666 44.627-14.984 11.381-8.392 26.228-28.286 22.366-34.242l-51.972-80.134L157.816.088c-5.657-1.205-45.216 10.071-63.005 21.608z"/>
+                    </svg>
+                    <span class="contact-section__telnumber">0120-505-642</span>
+                </a>
+            </div>
+        <!-- メールボタン -->
+            <div class="contact-section__contents-btn contact-section__mail">
+                <a href="contact.html" class="contact-section__link">
+                    <!-- mail.svgをインライン埋め込み -->
+                    <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 512 512"  xml:space="preserve" opacity="1">
+                        <path class="st0"  d="M512 295.199l-66.08-68.64L512 169.6zm-445.84-68.64L0 295.279V169.6zM512 357.6v63.199c0 15.281-12.4 27.682-27.68 27.682H27.68c-15.281 0-27.68-12.4-27.68-27.682V357.6l98.959-102.721L212 352.238c11.76 10.082 27.359 15.682 44 15.682s32.32-5.6 44.08-15.682l112.959-97.359L512 357.6z"/>
+                        <path class="st0" d="M512 91.119v27.68l-241.442 208c-7.76 6.72-21.359 6.72-29.119 0L0 118.799v-27.68c0-15.279 12.398-27.6 27.68-27.6h456.64c15.28 0 27.68 12.321 27.68 27.6z" />
+                    </svg>
+                    <span class="contact-section__mailtext ">お問い合わせフォームはこちら</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

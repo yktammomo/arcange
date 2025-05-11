@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.Instagram{
+    width: 100%;
+    .bg-orange__wrapper{
+
+        padding-bottom: rem(60);
+    }
+    &__contents{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+.Instagram__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(24);
+    margin-bottom: rem(45);
+
+}
+
+.Instagram__list{
+    aspect-ratio: 1/1;
+}
+
+@include mq (){
+    .Instagram__img{
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(48);
+        margin-bottom: rem(60);
+        &__contents{
+            width: calc(1200px / 1440px)*100%;
+            margin-left: 6%;
+        }
+    }
+}

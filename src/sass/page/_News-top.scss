@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.News-top{
+    &__wapper{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: rem(120);
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        padding-top: rem(60);
+    }
+   
+    &__contents{
+        padding-top: rem(35);
+    }
+    &__list{
+        display: flex;
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        border-bottom: 1px  solid #5D5D5D;
+    
+    }
+    &__list:first-child{
+        border-top: 1px solid #5D5D5D;
+    }
+    &__date{
+        padding-right: rem(21);
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__date::after{
+        content: "";
+        width: 1px;
+        height: 20px;
+        background-color: #EB6100;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+    }
+    &__text{
+        padding-left: rem(30);
+    }
+}
+
+@include mq (){
+    .News-top{
+        &__wapper{
+            flex-direction: row;
+            padding-bottom: rem(120);
+        }
+        &__title{
+            margin-right: rem(59);
+            padding-top: rem(160);
+        }
+        &__contents{
+            padding-top: rem(122);
+        }
+        &__date{
+            padding-right: rem(40);
+            padding-left: rem(40);
+
+        }
+    }
+}

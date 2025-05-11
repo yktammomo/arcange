@@ -1,0 +1,299 @@
+@use "global" as *;
+// ----------------
+// header-pc
+// ----------------
+
+.header-pc{
+    display: none;
+    @include mq (){
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        width: 100%;
+        background-color: #FFF;
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding: rem(18) rem(60);
+    &__logo{
+        padding-top: rem(6);
+        width: calc((435px / 1920px)*100%);
+        max-width: rem(300);
+    }
+    &__right{
+        display: flex;
+        align-items: flex-end;
+    }
+    &__tel{
+        margin-right: rem(60);
+    }
+    &__saiyo{
+        margin-right: rem(60);
+    }
+    &__name{
+        width: 100%;
+        text-align: center;
+    }
+    &__opentime{
+        width: 100%;
+        text-align: center;
+        line-height: 0.8;
+    }
+    
+}
+
+.header-nav-pc{
+    width: 100%;
+    max-width: rem(1200);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(23);
+    
+}
+
+.header-nav__item{
+    width: 13.2111%;
+}
+.header-nav__item a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.header-nav__item a::after{
+    position: absolute;
+    content: "";
+    background-color: #5D5D5D;
+    width: 1px;
+    height: 16px;
+    top: 4px;
+    right: 0;
+
+}
+.header-nav__item--home a{
+    padding-left: 0;
+}
+
+.header-nav__item.header-nav__item--end a::after{
+    display: none;
+}
+
+.header-nav__item--end a{
+    padding-right: 0;
+}
+
+// ----------------
+// header-sp
+// ----------------
+
+.header-sp{
+    width: 100%;
+    display: flex;
+    background: #fff;
+    padding: rem(26) rem(20);
+    position: fixed;
+    z-index: 10000;
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__logo{
+        width: calc((185px / 335px)*100%);
+        min-width: rem(200);
+        max-width: rem(230);
+    }
+}
+@media screen and (max-width: 500px) {
+    .header-sp{
+        padding: rem(16) rem(20);
+    }
+    
+}
+
+
+// ----------------
+// ハンバーガーメニュー
+// ----------------
+
+.drawer-menu{
+    width: rem(46);
+    height: rem(46);
+    aspect-ratio: 1/1;
+    z-index: 9999;
+    &__btn{
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(rgba(235, 97, 0, 1), rgba(243, 152, 1, 1));
+        border-radius: 50%;
+        position: relative; 
+    }
+    &__btn--line{
+        position: absolute;
+        width: rem(26);
+        height: 2px;
+        background-color: #fff;
+    }
+    &__btn--line:nth-child(1){
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__btn--line:nth-child(2){
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+// ----------------
+// クリックしたらバツ印
+// ----------------
+
+.drawer-menu.open{
+    .drawer-menu__btn--line:nth-child(1){
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: 0.5s;
+    }
+    .drawer-menu__btn--line:nth-child(2){
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        transition: 0.5s;
+    }
+}
+// -----------------------------------
+// spナビメニュー（クリックしたらでてくる）
+// -------------------------------------
+.header-sp-nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FDEFD8;
+    z-index: 9998;
+    animation: fadeOut 0.5s;
+    padding: rem(120) rem(20);
+   
+    
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: rem(10);
+        margin-bottom: rem(30);
+    }
+    &__item{
+        border-bottom: 1px solid #5d5d5d;
+        padding-bottom: rem(10);
+    }
+    &__item a{
+        padding-bottom: rem(10);
+    }
+}
+.header-sp-top{
+    &____right{
+        text-align: center;
+    }
+    &__tel{
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: rem(20);
+    }
+    &__saiyo{
+        width: calc((195px / 335px)*100%);
+        margin: 0 auto;
+    }
+    &__contact{
+        width: calc((195px / 335px)*100%);
+        margin: 0 auto;
+        margin-bottom: rem(20);
+    }
+
+}
+
+.header-sp-nav.open{
+    display: block;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+html.is-fixed,
+body.is-fixed {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+// ヘッダーをスクロール方向で隠したり出現したりする
+.header-sp.hide,
+.header-pc.hide {
+  transform: translateY(-100%);
+  transition: transform  0.5s ease-in-out;
+}
+
+
+// ヘッダーの高さを変数で指定（要素がまわりこまないように）
+/* 共通：一旦0を初期値に */
+main {
+    padding-top: 0;
+  }
+  
+  
+  /* デスクトップ（PC）用 */
+
+
+  @media screen and (min-width: 768px) {
+    main {
+      padding-top: 130px; /* 変数が未定義でも安全に100pxで代替 */
+    }
+  }
+  @media screen and (max-width: 767px) {
+    main {
+      padding-top: var(--sp-header-height, 100px); /* 変数が未定義でも安全に60pxで代替 */
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    main {
+        padding-top: 80px;
+      }
+  }
+  @media screen and (min-width: 1000px) {
+    main {
+      padding-top: 150px;
+    }
+    
+  }
+  
+  
+

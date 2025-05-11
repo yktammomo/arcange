@@ -1,0 +1,272 @@
+@use "global" as *;
+
+
+.btn{
+    display: block;
+}
+
+// オレンジ背景ボタン
+.bg-orange-btn{
+    position: relative;
+    border: 1px solid #EB6100;
+    background: linear-gradient(180deg, rgba(235, 97, 0, 1), rgba(243, 152, 1, 1));
+    overflow: hidden;
+    z-index: 0;
+  
+    a{
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        display: block;
+        text-align: center;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, #ffffff, #f3f3f3);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 0;
+    
+    }
+    // ホバー時：白背景を表示し、テキスト色もオレンジに
+  &:hover::before {
+    opacity: 1;
+  }
+  &:hover a {
+    color: #EB6100; // テキストとアイコン両方がこの色になる
+  }
+  &:hover .top560-btn__text {
+    color: #EB6100;
+  }
+}
+
+// 横の▷マーク
+.triangle{
+    position: relative;
+}
+
+.triangle::before {
+    content: "";
+    position: absolute;
+    top: 50%;   /* 縦軸をセンタリングする */ 
+    right: 0;
+    transform: translateY(-50%);   /* 縦軸をセンタリングする */  
+    border: 8px solid transparent;
+    border-left: 8px solid #fff; 
+}
+
+.triangle-after{
+    position: relative;
+}
+
+.triangle-after::after {
+    content: "";
+    position: absolute;
+    top: 50%;   /* 縦軸をセンタリングする */ 
+    right: 0;
+    transform: translateY(-50%);   /* 縦軸をセンタリングする */  
+    border: 8px solid transparent;
+    border-left: 8px solid #fff; 
+}
+
+// ヘッダーのボタン
+.header-top__btn a{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// お電話でのお問い合わせ
+
+
+.header-top__btn--tel a{
+    display: flex;
+    align-items: center;
+}
+
+.header-top__btn--tel a img{
+    display: flex;
+    width: rem(18);
+    aspect-ratio: 1/1;
+    margin-right: rem(6);
+}
+
+// 採用情報ボタン
+.header-top__btn--saiyo a{
+    padding: rem(10) rem(45);
+
+}
+
+// お問い合わせボタン
+.header-top__btn--contact a{
+    padding: rem(10) rem(35);
+
+}
+
+.header-top__btn--contact a img {
+    width: rem(30);
+    display: block;
+    margin-right: rem(8);
+}
+
+
+
+
+//TOPページボタン
+// 『不動産専用サイト』
+.top560-btn {
+    display: block;
+    max-width: rem(560);
+    margin: 20px auto;
+    position: relative;
+    border-radius: 30px;
+  
+
+}
+.top560-btn a {
+    display: inline-block;
+    width: 100%;
+    padding-top: rem(22);
+    padding-bottom: rem(22);
+}
+.bg-orange-btn{
+    .top560-btn__text{
+        color: #fff;
+        transition: color 0.5s ease;
+    }
+}
+
+@include mq (){
+    .top560-btn{
+        width: 100%;
+        width: calc((560px / 1200px)*100%);
+        border-radius: 40px;
+    }
+    .top560-btn a {
+        padding-top: rem(44);
+        padding-bottom: rem(44);
+    }
+}
+
+
+// ----------------
+// 白い背景ボタン
+// ----------------
+.bg-white-btn{
+    background-color: #fff;
+    border: 1px solid #EB6100;
+    a{
+        color: #EB6100;
+        padding-top: rem(22);
+        padding-bottom: rem(22);
+    
+    }
+    a::before{
+        content: "";
+        position: absolute;
+        top: 50%;   /* 縦軸をセンタリングする */ 
+        right: 5%;
+        transform: translateY(-50%);   /* 縦軸をセンタリングする */  
+        border: 10px solid transparent;
+        border-left: 12px solid #EB6100; 
+    
+    }
+    
+    .top560-btn__text{
+        color: #EB6100;
+    }
+}
+
+.bg-white-btn:hover{
+    background-color: #EB6100;
+    transition: 0.5s;
+    a::before{
+        border-left: 12px solid #ffffff;
+        transition: 0.5s; 
+    }
+}
+.bg-white-btn:hover.bg-white-btn .top560-btn__text {
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+
+
+.buy-serch__btn--icon {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    fill: currentColor;
+    transition: fill 0.5s ease;
+  }
+
+
+.Toarchive-btn{
+    text-align: left;
+    &__text{
+        display: inline-block;
+        color: #EB6100;
+        line-height: 2;
+        border-bottom: 2px solid #EB6100;
+
+    }
+}
+
+.Toarchive-btn-sp{
+    margin-top: rem(30);
+}
+
+.Strength-btn {
+    margin: 0 auto;
+   
+}
+.Strength-btn a {
+    text-align: center;
+}
+
+.Instagram-btns{
+    padding-left: rem(20);
+    padding-right: rem(20);
+}
+
+.Instagram-btn{
+    width: 100%;
+    margin: 0 auto;
+    
+    @include mq (){
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+// ====================
+// スタッフブログボタン
+// ====================
+
+.Tostaffblog-btn{
+    width: calc((292px / 357px)*100%);
+    margin: 0 auto;
+    border-radius: rem(15);
+    box-shadow: 0px 4px 0px 0px rgba(245, 186, 88, 1);
+    a{
+        display: flex;
+        width: 100%;
+        padding: rem(16) rem(16) rem(8) rem(24);
+        border-radius: rem(15);
+        img{
+            width: calc((48px/297px)*100%);
+            margin-right: rem(25);
+        }
+        
+    }&__text{
+        display: inline-block;
+        padding-top: rem(7);
+        
+    }
+
+}
+

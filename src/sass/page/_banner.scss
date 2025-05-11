@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.banner{
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    &__unit{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(14);
+    }
+    &__list{
+        aspect-ratio: 279 / 108;
+    }
+}
+
+@include mq (){
+    .banner{
+        padding-top: rem(120);
+        padding-bottom: rem(120);
+        &__unit{
+            grid-template-columns: repeat(4,1fr);
+            gap: rem(27);
+        }
+    }
+}

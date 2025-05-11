@@ -1,0 +1,117 @@
+@use "global" as *;
+
+.contact-section{
+    width: 100%;
+    background-color: rgba($color: #F39801, $alpha: 0.15);
+    padding-top: rem(40);
+    padding-bottom: rem(60);
+    &__title{
+        margin-bottom: rem(20);
+    }
+    &__text{
+        margin-bottom: rem(60);
+        font-size: rem(14);
+        text-align: center;
+    }
+    &__contents{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__contents-btn{
+        width: 100%;
+        max-width: rem(470);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: rem(15) ;
+        text-align: center;
+        margin-bottom: rem(20);
+        
+    }
+    &__link{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        background-color: #EB6100;
+        padding-top: rem(25);
+        padding-bottom: rem(30);
+        // transition: all 0.5s;
+    }
+    &__tel{
+        font-size: rem(24);
+        font-weight: 700;
+    }
+    &__telnumber{
+        color: #fff;
+        font-weight: 400;
+        font-family: $second-font-family;
+    }
+    &__mailtext{
+        color: #fff;
+        font-size: rem(18);
+        font-family: $base-font-family;
+        line-height: rem(45);
+        font-weight: 700;
+    }
+}
+
+.contact-section__link svg {
+    width: calc((50px / 470px )*100%);
+    height: auto;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    fill: #fff; /* 通常時は白 */
+    margin-right: 10px;
+    // transition: fill 0.5s ease;
+}
+
+
+.contact-section__link--tel svg{
+    display: inline-block;
+    aspect-ratio: 1/1;
+}  
+
+.contact-section__link:hover{
+    background-color: #fff;
+}
+.contact-section__link:hover .contact-section__telnumber,
+.contact-section__link:hover .contact-section__mailtext{
+    color: #EB6100; /* ホバー時はオレンジ */
+}
+.contact-section__link:hover svg{
+    fill: #EB6100; /* ホバー時はオレンジ */
+}
+
+
+
+@include mq (){
+    .contact-section{
+        padding-top: rem(103);
+        padding-bottom: rem(120);
+        &__contents{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__link{
+            padding-top: rem(40);
+            padding-bottom: rem(45);
+        }
+        &__text{
+            font-size: rem(20);
+        }
+        &__contents-btn{
+            width: calc((470px / 1000px)*100%);
+            
+        }
+        &__tel{
+            font-size: rem(40);
+        }
+        &__mailtext{
+            font-size: rem(24);
+            line-height: rem(45)
+        }
+
+    }
+}

@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.breadcrumb{
+    width: 100%;
+    &__unit{
+        display: flex;
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+    }
+    &__list{
+        margin-right: rem(25);
+        position: relative;
+        font-size: rem(14);
+    }
+    &__list::after{
+        position: absolute;
+        content: "";
+        display: block;
+        width: rem(10);
+        height: rem(10);
+        border-top: 1px solid #505050;
+        border-right: 1px solid #505050;
+        transform: rotate(45deg);
+        top: 30%;
+        right: rem(-13);
+    }
+    &__list:last-child::after{
+        display: none;
+    }
+    
+}

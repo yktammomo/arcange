@@ -1,0 +1,156 @@
+@use "global" as *;
+
+.Search{
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+}
+
+.section__searchtitle--text{
+    bottom: rem(-30);
+}
+
+.search-unit{
+    border-radius: 15px;
+    background-color: #fff;
+    padding-bottom: rem(30);
+    margin-bottom: rem(50);
+    margin-left: 0;
+    margin-right: 0;
+    &__title{
+        width: 100%;
+        text-align: center;
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+        background-color: #EB6100;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: rem(50);
+        
+    }
+}
+.image-areamap{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: rem(60);
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+.another-area__btn{
+    margin-bottom: rem(60);
+    width: 90%;
+}
+
+
+// こだわり条件からさがす
+
+
+.commit-search__contents{
+    padding-left: rem(30);
+    padding-right: rem(30);
+}
+
+.commit-search__unit{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: rem(30);
+}
+
+.commit-search__item{
+    a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.commit-search__img{
+    display: inline-block;
+    width: 28.51%;
+    margin-right: rem(16);
+}
+
+// 価格帯から探す
+
+.price-search__contents{
+    padding-left: rem(30);
+    padding-right: rem(30);
+
+}
+
+.price-search__unit{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(30);
+}
+
+.price-search__list{
+    background-color: rgba(243, 152, 1, 0.13) ;
+    border-radius: 12px;
+    a{
+        display: inline-block;
+        padding-top: rem(26);
+        padding-bottom: rem(26);
+        width: 100%;
+        text-align: center;
+        color: #333;
+        font-size: rem(16);
+    }
+}
+
+@include mq (){
+    .section__searchtitle--text{
+        bottom: rem(-20);
+    }
+    .search-unit{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: rem(1000);
+        padding-bottom: rem(50);
+        &__title{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    .image-areamap{
+        width: 71.2%;
+        margin: 0 auto;
+        margin-bottom: rem(50);
+    }
+    .commit-search__contents{
+        padding-left: rem(103);
+        padding-right: rem(103);
+    }
+    .commit-search__unit{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .price-search__contents{
+        padding-left: rem(103);
+        padding-right: rem(103);
+    
+    }
+    .price-search__unit{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .commit-search__contents{
+        padding-left: rem(5);
+        padding-right: rem(5);
+    }
+    .commit-search__item{
+        a {
+            flex-direction: column;
+        }
+    }
+    .commit-search__img{
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: rem(6);
+    }
+    
+}
+

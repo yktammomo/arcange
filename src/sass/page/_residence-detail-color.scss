@@ -1,0 +1,132 @@
+@use "global" as *;
+
+
+// 土地の色～オレンジ～
+
+.new-residence__orange-bg{
+    .card01__category{
+        color: #EB6100;
+        border: 1px solid #EB6100;
+    }
+    .card01__place-title{
+        border-bottom: 1px solid #EB6100;
+    }
+
+
+}
+
+.residence__orange-bg{
+    .mv-page-title__text--jp{
+        color: #EB6100;
+    }
+    .residence-contents{
+        border: 2px solid #EB6100; 
+    }
+    .residence-top{
+        background-color: #EB6100;
+    }
+    .residence-top-left{
+        &__category{
+            color: #EB6100;  
+        }
+    }
+    .residence-map{
+        svg{
+            fill: #EB6100;
+        }
+    }
+    .residence-detail-heading{
+        color: #EB6100;  
+
+    }
+
+    .slider04-thumbnails .splide__arrow svg {
+        fill: #EB6100;
+    }
+    .splide-nearby .splide__arrow svg {
+        fill: #EB6100;
+    }
+    .residence-point{
+        &__title{
+            background-color: #FDE3B9;
+        }
+        &__title--jp{
+            color: #EB6100;
+        }
+        &__contents{
+            background-color: rgba($color: #F39801, $alpha: 0.15);
+        }
+    }
+    .residence-detail-table__head{
+        background-color: #F39801;
+    }
+    .residence-detail-table__body{
+        border: 1px solid #F39801;
+    }
+}
+
+
+// マンションの色～グリーン～
+
+.new-residence__green-bg{
+    .card01__category{
+        color: #80C342;
+        border: 1px solid #80C342;
+    }
+    .card01__place-title{
+        border-bottom: 1px solid #80C342;
+    }
+
+
+}
+
+.residence__green-bg{
+    .mv-page-title__text--jp{
+        color: #80C342;
+    }
+    .residence-contents{
+        border: 2px solid #80C342; 
+    }
+    .residence-top{
+        background-color: #80C342;
+    }
+    .residence-top-left{
+        &__category{
+            color: #80C342;  
+        }
+    }
+    .residence-map{
+        svg{
+            fill: #80C342;
+        }
+    }
+
+    .residence-detail-heading{
+        color: #80C342;  
+
+    }
+    .slider04-thumbnails .splide__arrow svg {
+        fill: #80C342;
+    }
+    .splide-nearby .splide__arrow svg {
+        fill: #80C342;
+    }
+    .residence-point{
+        &__title{
+            background-color: #E2F2D3;
+        }
+        &__title--jp{
+            color: #80C342;
+        }
+        &__contents{
+            background-color: rgba($color: #93CC61, $alpha: 0.15);
+        }
+    }
+    .residence-detail-table__head{
+        background-color: #80C342;
+    }
+    .residence-detail-table__body{
+        border: 1px solid #80C342;
+    }
+}
+

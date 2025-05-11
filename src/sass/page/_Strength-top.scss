@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.Strength-top{
+    margin-bottom: rem(67);
+}
+
+.Strength-top-lower{
+    padding-top: rem(80);
+    padding-bottom: rem(120);
+}
+
+.group01{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(30);
+    margin-bottom: rem(30);
+    &__list{
+        max-width: rem(300);
+        margin: 0 auto;
+    }
+    &__circle{
+        aspect-ratio: 1/1;
+        background-color: rgba($color: #EB6100, $alpha: 0.13);
+        border-radius: 50%;
+        border: 1px double #EB6100;
+        max-width: rem(250);
+        margin: 0 auto;
+        margin-bottom: rem(30);
+        
+        
+    }
+    &__title{
+        color: #EB6100;
+       
+
+    }
+    &__text{
+        padding-left: rem(17);
+        padding-right: rem(17);
+        line-height: 2;
+    }
+
+}
+.btn.top560-btn.Strength-btn a{
+    min-width: rem(320);
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+
+}
+
+@include mq (){
+    .group01{
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(65);
+        &__text{
+            padding-left: rem(17);
+            padding-right: rem(17);
+            line-height: 1.5;
+        }
+
+    }
+    .btn.top560-btn.Strength-btn a{
+        text-align: center;
+        padding-top: rem(22);
+        padding-bottom: rem(23);
+        max-width: rem(560);
+    
+    }
+}

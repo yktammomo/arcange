@@ -1,0 +1,170 @@
+@use "global" as *;
+
+
+.archive-residence{
+    width: 100%;
+    padding-left: rem(20);
+    padding-right: rem(20);
+    display: flex;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        .new-residence__card{
+            width: 100%;
+        }
+
+    }
+}
+
+@include mq (){
+    .archive-residence{
+        margin: 0 auto;
+        padding-left: rem(50);
+        padding-right: rem(50);
+
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+            .new-residence__card{
+                width: 80%;
+            }
+            .residence-sidebar{
+                width: 20%;
+            }
+        }
+
+    }
+}
+
+// サイドバー
+
+.residence-sidebar{
+    margin-left: rem(30);
+    .sidebar-residence {
+        border-radius: rem(10);
+        &__title{
+            padding-top:rem(10) ;
+            padding-bottom:rem(10) ;
+            padding-left: rem(5);
+            background-color: rgba(235, 97, 0) ;
+            margin-bottom: rem(8);
+            font-size: rem(18);
+            font-weight: 700;
+            color: #fff;
+        }
+       
+    }
+    .sidebar-category{
+        &__unit{
+            margin-bottom: rem(15);
+        }
+       
+        &__list{
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+            padding-top: rem(5);
+            padding-bottom: rem(5);
+            border-bottom: 1px solid #333;
+            margin-bottom: rem(5);
+        }
+        &__list--orange{
+            background-color: rgba(235, 97, 0, .13) ;
+        }
+        &__list--green{
+          
+            background-color: rgba(235, 97, 0, .13) ;
+        }
+        
+    }
+    .sidebar-tag__unit{
+        margin-bottom: rem(15);
+        a{
+            display: inline-block;
+            padding: rem(5) rem(10);
+            background-color: rgba(235, 97, 0, .13) ;
+            border-radius: rem(10);
+            font-size: rem(14);
+            margin-bottom: rem(5);
+        }
+    }
+}
+
+.parcent85{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+// ページネーション
+
+.pagination{
+    text-align: center;
+}
+
+.page-numbers{
+    display: inline-block;
+    padding: rem(5) rem(10);
+    border-radius: rem(5) ;
+    background-color: rgba(235, 97, 0, .13) ;
+    color: #333;
+    font-size: rem(14);
+    margin-left: rem(10);
+    margin-right: rem(10);
+}
+
+.page-numbers.current{
+    background-color: rgba(235, 97, 0, .5) ;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .residence-sidebar{
+        margin-left: 0;
+    }
+  
+    
+}
+
+// 全物件一覧へ
+
+.TOALL-desidence-btn a {
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 280px;
+    padding: 10px 25px;
+    color: #EB6100;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    font-size: clamp(14px, calc(4.4vw + 0.1rem), 20px);
+}
+.TOALL-desidence-btn a:hover {
+    background: #EB6100;
+    color: #FFF;
+}
+.TOALL-desidence-btn a:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #EB6100;
+    border-right: 3px solid #EB6100;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.TOALL-desidence-btn a:hover:after {
+    border-color: #FFF;
+}
+
+
+
+

@@ -1,0 +1,259 @@
+@use "global" as *;
+
+.Buying-top{
+    overflow: hidden;
+    &__wrapper{
+        padding-top: rem(38);
+        padding-bottom: rem(25);
+    }
+}
+
+// 新着情報のカードスライダー
+
+.card01{
+    padding-bottom: rem(60);
+    &__title{
+        margin-bottom: rem(30);
+    }
+    &__img{
+        margin-bottom: rem(23);
+        aspect-ratio: 313 / 236;
+        img{
+            display: block;
+            aspect-ratio: 313 / 236;
+            border-radius: rem(15);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__contents{
+        margin-bottom: rem(30);
+    }
+    &__category{
+        width: fit-content;
+        border: 1px solid #000;
+        border-radius: 12px;
+        padding: rem(4) rem(15);
+        margin-bottom: rem(8);
+        
+    }
+    &__train{
+        margin-top: rem(7);
+    }
+    &__place-title{
+        padding-bottom: rem(7);
+        border-bottom: 1px solid #333;
+    }
+    &__price{
+        margin-top: rem(7);
+        margin-bottom: rem(7);
+    }
+    &__text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3; /* ← 表示したい行数に変更 */
+        line-clamp: 3; 
+    }
+}
+
+.Buying-top{
+    // スライダーの矢印
+    .splide__arrow{
+        top: 105%;
+        background: #EB6100;
+        width: 4em;
+        height: 4em;
+        border:1px solid #EB6100;
+        opacity: 1;
+        svg{
+            display: none;
+        }
+    }
+    .splide__arrow:hover{
+        background: #fff;
+        transition: all 0.5s ease;
+
+    }
+    .splide__arrow--prev{
+        left: 0;
+    }
+    .splide__arrow--prev::before{
+        content: "";
+        position: absolute;
+        top: 50%;   /* 縦軸をセンタリングする */ 
+        left: 38%;
+        transform: translate(-50%,-50%);   /* 縦軸をセンタリングする */  
+        border: 10px solid transparent;
+        border-right: 22px solid #fff; 
+    }
+    .splide__arrow--next{
+        left: 23%;
+    }
+    .splide__arrow--next::before{
+        content: "";
+        position: absolute;
+        top: 50%;   /* 縦軸をセンタリングする */ 
+        left: 62%;
+        transform: translate(-50%,-50%);   /* 縦軸をセンタリングする */  
+        border: 10px solid transparent;
+        border-left: 22px solid #fff; 
+    }
+    .splide__arrow:hover.splide__arrow--prev::before{
+        border-right: 22px solid #EB6100;
+    }
+    .splide__arrow:hover.splide__arrow--next::before{
+        border-left: 22px solid #EB6100;
+    }
+    .splide__pagination{
+        display: none;
+    }
+    &__slider{
+        position: relative;
+    }
+    &__slider::before{
+        position: static;
+       
+    }
+    
+}
+
+
+
+.buying-seach{
+    width: 100%;
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+    padding: rem(60) rem(20);
+    margin: 0 auto;
+
+}
+
+.card02{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: rem(66);
+    text-align: center;
+    gap: rem(24);
+    &__list{
+        border-radius: rem(15);
+    //     aspect-ratio: 330 / 308;
+        border: 3px solid #EB6100;
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 364 / 180;
+        img{
+            width: 100%;
+            height: 100%;
+            border-top-right-radius: rem(10);
+            border-top-left-radius: rem(10);
+        }
+    }
+    &__contents{
+        padding: rem(20) rem(22);
+        
+    }
+    &__title{
+        margin-bottom: rem(16);
+    }
+    &__text{
+        text-align: left;
+    }
+}
+
+.card02-1{
+    &__list{
+        border-radius: rem(15);
+        border: 2px solid #EB6100;
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+        background-position: center;
+        background-size: cover;
+    }
+    &__list--01{
+        background-image: url(../images/TOP/point-bg01.png);
+    }
+    &__list--02{
+        background-image: url(../images/TOP/point-bg02.png);
+    }
+    &__list--03{
+        background-image: url(../images/TOP/point-bg03.png);
+    }
+    &__title{
+        margin-bottom: rem(16);
+    }
+}
+
+
+@include mq (){
+    .Buying-top{
+        &__wrapper{
+            padding-top: rem(38);
+            padding-bottom: rem(138);
+        }
+        .splide__arrow--next{
+            left: 10%;
+        }
+        &__slider::before{
+            position: absolute;
+            content: "";
+            background-color: #EB6100;
+            top: 103%;
+            right: 5%;
+            width: 75%;
+            height: rem(2);
+    
+        }
+    }
+    .buying-seach{
+        padding-top: rem(60);
+        padding-bottom: rem(120);
+    }
+    .card01{
+        &__category{
+            padding: rem(5) rem(20);
+        }
+        &__price{
+            margin-top: 0;
+        }
+    }
+    .card02{
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(45);
+        &__list{
+            margin-bottom: rem(15);
+        }
+        &__img{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 364 / 235;
+        }
+        &__contents{
+            padding: rem(30) rem(22);
+            
+        }
+        &__title{
+            margin-bottom: rem(24);
+        }
+        &__text{
+            text-align: left;
+        }    
+    }
+    .card02-1{
+        &__list{
+            padding-top: rem(30);
+            padding-bottom: rem(30);
+        }
+        &__title{
+            margin-bottom: rem(20);
+        }
+    }
+    
+
+}
+
+

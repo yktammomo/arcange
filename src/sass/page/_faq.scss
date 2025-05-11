@@ -1,0 +1,102 @@
+@use "global" as *;
+
+.FAQ{
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+    .inner-1200{
+        padding-left: 0 ;
+        padding-right: 0;
+    }
+  
+}
+.accordion{
+    padding: rem(10);
+    padding-bottom: rem(40);
+    background-color: #F39801;
+    &__item{
+        transition: 0.5s ease-in;
+        padding-bottom: 0;
+        border-bottom: 3px solid #ffffff;
+    }
+
+    &__question{
+        padding-top: rem(24);
+        padding-bottom: rem(12);
+        position: relative;
+    }
+    &__question::marker{
+        list-style: none;
+    }
+    &__answer{
+        padding-top: rem(12);
+        padding-bottom: rem(12);
+        max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease; /* ふわっと感のあるトランジション */
+    }
+    summary {
+        display: block;
+        width: calc(100% - rem(40));
+        list-style: none;
+    }
+      
+      /* 一部ブラウザで消えなかった場合は以下も追記 */
+    summary::-webkit-details-marker {
+        display:none;
+    }
+}
+
+.accordion__answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease; /* ふわっと感のあるトランジション */
+  }
+  
+  details[open] .accordion__answer {
+    max-height: 200px; /* ここは適宜調整。表示したい最大の高さ */
+    opacity: 1;
+  }
+  
+  .accordion__question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion__question img {
+    transition: transform 0.3s ease;
+  }
+  
+  details[open] .accordion__question img {
+    transform: rotate(180deg); /* 下向き矢印がクリック後回転して上向きになる */
+  }
+  
+
+.arrow-down__icon{
+    position: absolute;
+    top: 50%;
+    right: rem(-30);
+    transform: translateY(-50%);
+    display: inline-block;
+    width: rem(20);
+    height: rem(20);
+}
+
+@include mq (){
+    .accordion{
+        padding: rem(60);
+        padding-bottom: rem(60);
+        &__item{
+            padding-bottom: rem(12);
+        }
+        summary {
+            width: 100%;
+        }
+    }
+    .arrow-down__icon{
+        right: 0;
+    }
+}

@@ -1,0 +1,345 @@
+@use "global" as *;
+// --------------
+// JP FONT
+// --------------
+
+// font-weight400
+
+.jpfont-12-normal{
+    font-family: $base-font-family;
+    font-size: rem(12);
+    font-weight: 400;
+}
+.jpfont-13-normal{
+    font-family: $base-font-family;
+    font-size: rem(13);
+    font-weight: 400;
+}
+.jpfont-14-normal{
+    font-family: $base-font-family;
+    font-size: rem(14);
+    font-weight: 400;
+}
+
+.jpfont-16-normal{
+    font-family: $base-font-family;
+    font-size: rem(16);
+    font-weight: 400;
+}
+.jpfont-18-normal{
+    font-family: $base-font-family;
+    font-size: rem(18);
+    font-weight: 400;
+}
+.jpfont-19-normal{
+    font-family: $base-font-family;
+    font-size: rem(19);
+    font-weight: 400;
+}
+.jpfont-20-normal{
+    font-family: $base-font-family;
+    font-size: rem(20);
+    font-weight: 400;
+}
+.jpfont-24-normal{
+    font-family: $base-font-family;
+    font-size: rem(24);
+    font-weight: 400;
+}
+.jpfont-26-normal{
+    font-family: $base-font-family;
+    font-size: rem(26);
+    font-weight: 400;
+}
+.jpfont-36-normal{
+    font-family: $base-font-family;
+    font-size: rem(36);
+    font-weight: 400;
+}
+
+// font-weight700
+
+
+.jpfont-16-bold {
+    font-family: $base-font-family;
+    font-size: rem(12);
+    font-weight: 700;
+
+}
+.jpfont-18-bold {
+    font-family: $base-font-family;
+    font-size: rem(14);
+    font-weight: 700;
+
+}
+.jpfont-20-bold {
+    font-family: $base-font-family;
+    font-size: rem(20);
+    font-weight: 700;
+
+}
+.jpfont-24-bold {
+    font-family: $base-font-family;
+    font-size: rem(16);
+    font-weight: 700;
+
+}
+.jpfont-25-bold {
+    font-family: $base-font-family;
+    font-size: rem(25);
+    font-weight: 700;
+
+}
+.jpfont-30-bold {
+    font-family: $base-font-family;
+    font-size: rem(18);
+    font-weight: 700;
+
+}
+.jpfont-36-bold {
+    font-family: $base-font-family;
+    font-size: rem(36);
+    font-weight: 700;
+
+}
+.jpfont-45-bold {
+    font-family: $base-font-family;
+    font-size: rem(45);
+    font-weight: 700;
+
+}
+
+.jpfont-24-black {
+    font-family: $base-font-family;
+    font-size: rem(18);
+    font-weight: 900;
+
+}
+
+
+.jpfont-36-black {
+    font-family: $base-font-family;
+    font-size: rem(24);
+    font-weight: 900;
+
+}
+
+
+// -----------------------
+//   Eg font
+// -----------------------
+
+
+.egfont-12-normal{
+    font-family: $second-font-family;
+    font-size: rem(12);
+    font-weight: 400;
+}
+
+.egfont-13-normal{
+    font-family: $second-font-family;
+    font-size: rem(13);
+    font-weight: 400;
+}
+.egfont-16-normal{
+    font-family: $second-font-family;
+    font-size: rem(16);
+    font-weight: 400;
+}
+.egfont-18-normal{
+    font-family: $second-font-family;
+    font-size: rem(18);
+    font-weight: 400;
+}
+.egfont-19-normal{
+    font-family: $second-font-family;
+    font-size: rem(19);
+    font-weight: 400;
+}
+.egfont-20-normal{
+    font-family: $second-font-family;
+    font-size: rem(20);
+    font-weight: 400;
+}
+.egfont-24-normal{
+    font-family: $second-font-family;
+    font-size: rem(24);
+    font-weight: 400;
+}
+.egfont-26-normal{
+    font-family: $second-font-family;
+    font-size: rem(26);
+    font-weight: 400;
+}
+.egfont-36-normal{
+    font-family: $second-font-family;
+    font-size: rem(36);
+    font-weight: 400;
+}
+
+// font-weight700
+
+.egfont-16-bold {
+    font-family: $second-font-family;
+    font-size: rem(14);
+    font-weight: 700;
+
+}
+.egfont-18-bold {
+    font-family: $second-font-family;
+    font-size: rem(18);
+    font-weight: 700;
+
+}
+.egfont-20-bold {
+    font-family: $second-font-family;
+    font-size: rem(20);
+    font-weight: 700;
+
+}
+.egfont-24-bold {
+    font-family: $second-font-family;
+    font-size: rem(24);
+    font-weight: 700;
+
+}
+.egfont-36-bold {
+    font-family: $second-font-family;
+    font-size: rem(36);
+    font-weight: 700;
+
+}
+.egfont-70-black {
+    font-family: $second-font-family;
+    font-size: rem(50);
+    font-weight: 900;
+
+}
+.egfont-108-black {
+    font-family: $second-font-family;
+    font-size: rem(51);
+    font-weight: 900;
+
+}
+
+@include mq (){
+    .jpfont-16-bold{
+        font-size: rem(16);
+    }
+    .jpfont-18-bold{
+        font-size: rem(18);
+    }
+    .jpfont-24-bold {
+        font-size: rem(24);
+    
+    }
+    .jpfont-24-black{
+        font-size: rem(24);
+    }
+    .jpfont-30-bold {
+        font-size: rem(30);
+    }
+    .jpfont-36-black{
+        font-size: rem(36);
+    }
+    .egfont-16-bold {
+        font-size: rem(16);
+    
+    }
+    .egfont-70-black {
+        font-size: rem(70);
+    }
+    .egfont-108-black {
+        font-family: $second-font-family;
+        font-size: rem(108);
+        font-weight: 900;
+    
+    }
+}
+
+
+.font-color-bk{
+    color:#333333;
+}
+.font-color-wh{
+    color:#fff;
+}
+.vivid-orange{
+    .font-color-wh--13{
+        color: rgba($color: #ffffff, $alpha: 0.13);
+    }
+}
+.font-color-or{
+    color: #EB6100;
+}
+
+.shadow-orange{
+    box-shadow: 8px 7px 0px 0px rgba(243, 152, 1, 1);
+    
+}
+.shadow-gray{
+    box-shadow: 8px 7px 0px 0px rgba(93, 93, 93, 0.45);
+
+}
+
+.bg-orange{
+    background-color: rgba($color: #F39801, $alpha: 0.13);
+    &__wrapper{
+        padding-bottom: rem(150);
+        position: relative;
+    }
+    &__wrapper::before{
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 100%;
+        background-color: rgba($color: #F39801, $alpha: 0.15);
+        top: 0;
+        z-index: -1;
+      
+    }
+}
+.Left-top{
+    .bg-orange{
+        &__wrapper::before{
+            left: 0;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+    }
+}
+
+.Right-top{
+    .bg-orange__wrapper::before{
+        right: 0;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+}
+
+@include mq (){
+    .Left-top{
+        .bg-orange{
+            &__wrapper::before{
+                left: 5%;
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 100px;
+            }
+        }
+    }
+    .Right-top{
+        .bg-orange__wrapper::before{
+            right: 5%;
+        }
+    }
+}
+
+
+.vivid-orange{
+    background: linear-gradient(180deg, rgba(235,97,0,1) 0%, rgba(243,152,1,1) 100%);
+}
+.bg-vw-left{
+    width: 100vw;
+}
+
+

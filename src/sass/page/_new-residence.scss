@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.new-residence{
+    padding-top: 0;
+    padding-bottom: rem(60);
+}
+
+// .card01__list:nth-last-of-type(n+4){
+//     display: none;
+// }
+.card01.new-residence__card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(45);
+}
+
+.new-residence__card{
+    padding-bottom: rem(30);
+    grid-template-columns: 1fr;
+}
+
+@include mq (){
+    .new-residence{
+        padding-bottom: rem(120);
+    }
+    // .card01__list:nth-last-of-type(n+4){
+    //     display: block;
+    // }
+    .card01.new-residence__card{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

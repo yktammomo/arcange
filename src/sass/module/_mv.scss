@@ -3,6 +3,7 @@
 .mv{
     width: 100%;
     margin-bottom: rem(60);
+    position: relative;
     &__img{
         width: 100%;
         aspect-ratio: 375 / 333;
@@ -20,6 +21,26 @@
         }
 
     }
+    &__title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    &__title--jp{
+        font-size: rem(24);
+        color: #EB6100;
+        font-family: $base-font-family;
+        font-weight: 700;
+    }
+    &__title--eg{
+        font-size: rem(49);
+        font-family: $second-font-family;
+        font-weight: 900;
+         color: #EB6100;
+    }
+
 }
 
 @include mq (){
@@ -34,6 +55,14 @@
                 font-size: rem(36);
             }
         }
+        &__title--jp{
+            text-align: center;
+        font-size: rem(33);
+        }
+        &__title--eg{
+            font-size: rem(91);
+        }
+
     }
 
 }

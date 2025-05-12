@@ -1492,6 +1492,7 @@ main {
   width: 100%;
   margin-bottom: 60px;
   margin-bottom: 3.75rem;
+  position: relative;
 }
 .mv__img {
   width: 100%;
@@ -1512,6 +1513,27 @@ main {
   font-size: 24px;
   font-size: 1.5rem;
 }
+.mv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.mv__title--jp {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #EB6100;
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 700;
+}
+.mv__title--eg {
+  font-size: 49px;
+  font-size: 3.0625rem;
+  font-family: "Jost", serif;
+  font-weight: 900;
+  color: #EB6100;
+}
 
 @media screen and (min-width: 768px) {
   .mv {
@@ -1525,6 +1547,13 @@ main {
   }
   .mv .mv-page-title__text--jp {
     font-size: 2.25rem;
+  }
+  .mv__title--jp {
+    text-align: center;
+    font-size: 2.0625rem;
+  }
+  .mv__title--eg {
+    font-size: 5.6875rem;
   }
 }
 .residence__orange-bg .mv-page-title__text--jp {
@@ -2703,6 +2732,10 @@ details[open] .accordion__question img {
           justify-content: center;
   width: 90%;
   margin: 0 auto;
+  margin-top: 80px;
+  margin-top: 5rem;
+  margin-bottom: 138px;
+  margin-bottom: 8.625rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -2951,6 +2984,88 @@ details[open] .accordion__question img {
     padding-left: 2.5rem;
   }
 }
+.points {
+  padding-top: 120px;
+  padding-top: 7.5rem;
+  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
+}
+.points__title {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(24px, 2.4vw + 12px, 36px);
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+.points-group03 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  gap: 1.875rem;
+}
+
+.point {
+  background-image: url(../images/knowledge/Knowledge-3point-bg.png);
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 313/436;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  margin-right: 30px;
+  margin-right: 1.875rem;
+  border-radius: 0.9375rem;
+}
+.point__lavel {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(235, 97, 0);
+  color: #fff;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
+  padding-right: 5px;
+  padding-right: 0.3125rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+.point__lavel::after {
+  content: "";
+  position: absolute;
+  top: 0; /* 縦軸をセンタリングする */
+  right: 0;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0); /* 縦軸をセンタリングする */
+  border: 15px solid transparent;
+  border-left: 12px solid rgb(235, 97, 0); /* 好みで色を変えてください */
+}
+.point__heading {
+  margin-left: 30px;
+  margin-left: 1.875rem;
+  margin-right: 30px;
+  margin-right: 1.875rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: rgb(235, 97, 0);
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+.point__text {
+  margin-left: 30px;
+  margin-left: 1.875rem;
+  margin-right: 30px;
+  margin-right: 1.875rem;
+  color: rgb(235, 97, 0);
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .process {
   padding-top: 60px;
   padding-top: 3.75rem;
@@ -3064,6 +3179,114 @@ details[open] .accordion__question img {
   text-align: center;
   font-weight: 900;
   line-height: 2;
+}
+
+.process-contents03 {
+  padding-top: 120px;
+  padding-top: 7.5rem;
+  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
+}
+.process-contents03__heading {
+  width: 71.3%;
+  margin: 0 auto;
+  font-size: clamp(24px, 4.6vw + 1px, 31px);
+  font-weight: 900;
+  color: #eb6100;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
+}
+.process-contents03__img {
+  width: 31%;
+  aspect-ratio: 311/203;
+  margin-right: 5%;
+}
+.process-contents03__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 311/203;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.process-contents03__text {
+  width: 61%;
+  font-size: clamp(16px, 4.6vw + 1px, 18px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eb6100;
+  font-weight: 900;
+}
+.process-contents03__logo {
+  width: 61%;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  max-width: 610px;
+  max-width: 38.125rem;
+  position: relative;
+}
+.process-contents03__logo::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 125px;
+  background-color: #eb6100;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 170px);
+          transform: translate(-50%, 170px);
+}
+.process-contents03__logo::after {
+  position: absolute;
+  content: "";
+  background-color: #eb6100;
+  width: 4px;
+  height: 50px;
+  left: 52.5%;
+  bottom: -175px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.process-contents03__img02 {
+  width: 65.8%;
+  margin: 0 auto;
+  aspect-ratio: 818/356;
+}
+.process-contents03__img02 img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 818/356;
+}
+
+.bg-orange-triangle {
+  padding: 50px;
+  background-color: rgba(243, 152, 1, .15);
+  position: relative;
+}
+.bg-orange-triangle::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+          clip-path: polygon(0 0, 50% 100%, 100% 0); /* ココ */
+  background-color: rgba(243, 152, 1, .15);
+  left: 0;
+  bottom: -100px;
+}
+
+.bg-white-path {
+  padding: 200px;
+  background: #fff;
 }
 
 .new-residence__orange-bg .card01__category {
@@ -4063,6 +4286,40 @@ details[open] .accordion__question img {
     padding-top: 1.375rem;
     padding-bottom: 1.4375rem;
     max-width: 35rem;
+  }
+}
+.top-message01__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1000/334;
+}
+.top-message01__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-message02 {
+  width: 100%;
+  background-image: url(../images/top-message/top-message__contents-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.core-message {
+  color: #EB6100;
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 900;
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .core-message {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

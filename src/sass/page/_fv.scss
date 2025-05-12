@@ -152,6 +152,8 @@
     justify-content: center;
     width: 90%;
     margin: 0 auto;
+    margin-top: rem(80);
+    margin-bottom: rem(138);
 }
 @include mq (){
     .fv-banner-3{

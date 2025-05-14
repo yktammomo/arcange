@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.points{
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+    &__title{
+        color: #fff;
+        text-align: center;
+        font-size: clamp(24px, calc(2.4vw + 12px), 36px);
+        margin-bottom: rem(40);
+
+    }
+}
+
+.points-group03{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(30);
+}
+
+.point{
+    background-image: url(../images/knowledge/Knowledge-3point-bg.png);
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 313 / 436;
+    padding-top: rem(20);
+    margin-right: rem(30);
+    border-radius: rem(15);
+    &__lavel{
+        width: fit-content;
+        background-color: rgba(235, 97, 0);
+        color: #fff;
+        padding-left: rem(15);
+        padding-right: rem(5);
+        font-family: "Roboto", sans-serif;
+        font-size: rem(24);
+        position: relative;
+        margin-bottom: rem(20);
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;   /* 縦軸をセンタリングする */ 
+            right: 0;
+            transform: translate(100%,0);   /* 縦軸をセンタリングする */  
+            border: 15px solid transparent;
+            border-left: 12px solid rgba(235, 97, 0);   /* 好みで色を変えてください */  
+        }
+
+    }
+    &__heading{
+        margin-left: rem(30);
+        margin-right: rem(30);
+        font-size: rem(18);
+        color: rgba(235, 97, 0);
+        font-weight: 700;
+        margin-bottom: rem(30);
+    }
+    &__text{
+        margin-left: rem(30);
+        margin-right: rem(30);
+        color: rgba(235, 97, 0);
+        font-size: rem(16);
+        font-weight: 700;
+    }
+}

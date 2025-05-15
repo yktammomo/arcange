@@ -150,14 +150,32 @@
 .fv-banner-3{
     grid-template-columns: repeat(auto-fit, 45%);
     justify-content: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: rem(80);
-    margin-bottom: rem(138);
+    margin-top: rem(20);    
+    margin-bottom: rem(60);
+    li {
+      width: 100%; // ←各アイテムがセル内で収まるように
+    }
+    // 3つ目だけ中央にしたい場合
+    li:nth-child(3) {
+    grid-column: 1 / -1; // 1行全体を使う
+    justify-self: center; // 横方向に中央寄せ
+    width: 45%; // 上2つと同じ幅
+  }
 }
 @include mq (){
     .fv-banner-3{
-    grid-template-columns: repeat(3,1fr);
+        width: 90%;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: rem(80);
+        margin-bottom: rem(138);
+         // PCでは中央寄せを解除
+        li:nth-child(3) {
+            grid-column: auto;
+            justify-self: auto;
+            width: 100%;
+        }
     }
 }
 

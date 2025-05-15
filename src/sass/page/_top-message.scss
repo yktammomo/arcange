@@ -138,7 +138,7 @@
     }
     &__item{
         width: 100%;
-        margin-bottom: rem(120);
+        margin-bottom: rem(60);
     }
     &__title{
         color: #fff;
@@ -225,6 +225,9 @@
     .important{
         padding-top: rem(120);
         margin-bottom: rem(120);
+        &__item{
+            margin-bottom: rem(120);
+        }
         &__contents{
         display: flex;
         flex-direction: row;

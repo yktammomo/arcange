@@ -12,37 +12,68 @@
 
 .ex-and-taxes-table{
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;/*collapseから変更*/
+    border-spacing: 0;
+    border-radius: rem(15);
+    overflow: hidden;
     &__item--title{
         width: 100%;
         background-color: rgba(235, 97, 0);
         text-align: left;
         color: #fff;
-        border: 1px solid rgba(235, 97, 0);
-        
-        
+        border: 1px solid rgba(235, 97, 0);     
     }
     &__title{
         width: 100%;
-        padding: rem(25) rem(30);
+        padding: rem(15) rem(15);
     }
     &__heading{
         width: 25%;
         border-left: 1px solid rgba(235, 97, 0);
         border-bottom: 1px solid rgba(235, 97, 0);
-        border-right: 1px solid rgba(235, 97, 0);
         padding-top: rem(18);
         padding-bottom: rem(18);
-        padding-left: rem(30);
+        padding-left: rem(10);
     }
     &__text{
-        border: 1px solid rgba(235, 97, 0);
         width: 75%;
         padding-top: rem(18);
+        padding-left: rem(15);
         padding-bottom: rem(18);
-        padding-left: rem(30);
+        border-left: 1px solid rgba(235, 97, 0);
         border-bottom: 1px solid rgba(235, 97, 0);
         border-right: 1px solid rgba(235, 97, 0);
     }
     
+}
+.ex-and-taxes-table__item--end{
+    .ex-and-taxes-table__heading{
+        border-bottom-left-radius: rem(15);
+        border-left: 1px solid rgba(235, 97, 0);
+        border-bottom: 1px solid rgba(235, 97, 0);
+        
+    }
+    .ex-and-taxes-table__text{
+        border-bottom-right-radius: rem(15);
+        border-bottom: 1px solid rgba(235, 97, 0);
+        border-right: 1px solid rgba(235, 97, 0);
+      
+
+    }
+
+}
+@include mq (){
+    .ex-and-taxes-table{
+        &__title{
+            padding: rem(25) rem(30);
+        }
+        &__heading{
+            padding-left: rem(30);
+            font-size: rem(16);
+        }
+        &__text{
+            padding-left: rem(30);
+
+        }
+    }
 }

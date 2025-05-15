@@ -3,14 +3,17 @@
 .process{
     padding-top: rem(60);
     padding-bottom: rem(60);
+    .section__title--eg{
+        font-size: rem(30);
+        line-height: 1;
+    }
 }
 
 .process-accordion {
     width: 100%;
-    max-width: 900px;
+    max-width: rem(500);
     margin: 0 auto;
-    margin-bottom: 7px;
-    border-radius: 5px;
+    margin-bottom: rem(60);
     &__item{
         margin-bottom: rem(30);
         border-radius: rem(15);
@@ -26,9 +29,12 @@
     color: #eb6100;
     font-weight: 700;
     background-color: #eb6100;
-    border-radius: rem(10);
     color: #fff;
     cursor: pointer;
+    border-top-left-radius: rem(10);
+    border-top-right-radius: rem(10);
+    border-bottom-left-radius: rem(10);
+    border-bottom-right-radius: rem(10);
 }
 
 .process-accordion summary::-webkit-details-marker {
@@ -53,6 +59,10 @@
 .process-accordion summary::after {
     transition: rotate .3s;
 }
+.process-accordion__item[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 .process-accordion__item[open] summary::after {
     rotate: 90deg;
@@ -73,6 +83,49 @@
     color: #eb6100;
 }
 
+.process-accordion{
+    &__contents{
+        padding-top: rem(15);
+        padding-left: rem(10);
+        padding-right: rem(10);
+        padding-bottom: rem(10);
+        text-align: center;
+        border-left: 1px solid  #eb6100;
+        border-bottom: 1px solid  #eb6100;
+        border-right: 1px solid  #eb6100;
+        border-bottom-left-radius: rem(15);
+        border-bottom-right-radius: rem(15);
+    }
+    &__text{
+        font-weight: 700;
+        margin-bottom: rem(30);
+        color: #333;
+    }
+}
+.process-accordion__text.font-color-or{
+    color: #eb6100;
+    margin-bottom: rem(5);
+
+}
+
+
+@include mq (){
+    .process-accordion{
+            max-width: rem(900);
+            margin-bottom: rem(120);
+        &__contents{
+            padding-top: rem(30);
+            padding-left: rem(30);
+            padding-right: rem(30);
+            padding-bottom: rem(10);
+        }
+    }
+}
+
+
+
+
+
 .process-contents02{
     width: 100%;
     background-image: url(../images/knowledge/to-process-bg.png);
@@ -81,7 +134,7 @@
     padding-top: rem(60);
     padding-bottom: rem(60);
     &__bg-white{
-        width: calc((1000px/ 1440px)*100%);
+        width: 80%;
         margin: 0 auto;
         background-color: rgba($color:#ffffff, $alpha: 0.9);
         border-radius: rem(15);
@@ -90,16 +143,41 @@
         color: #eb6100;
         padding-top: rem(30);
         padding-bottom: rem(30);
-        text-align: center;
+        text-align: left;
         font-weight: 900;
         line-height: 2;
+        padding-left: rem(10);
+        padding-right: rem(10);
     }
 }
+@include mq (){
+    .process{
+        .section__title--eg{
+            font-size: rem(51);
+        }
+    }
+    .process-contents02{
+        &__text{
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+
+        }
+        &__bg-white{
+            width: calc((1000px/ 1440px)*100%);
+        }
+
+    }
+}
+
+
+
 .process-contents03{
-    padding-top: rem(120);
-    padding-bottom: rem(120);
+    padding-top: rem(60);
+    padding-bottom: rem(100);
+    position: relative;
     &__heading{
-        width: 71.3%;
+        width: 85%;
         margin: 0 auto;
         font-size: clamp(24px, calc(4.6vw + 1px), 31px);
         font-weight: 900;
@@ -107,10 +185,14 @@
         text-align: center;
         margin-bottom: rem(60);
     }
+    .col-2{
+        flex-direction: column;
+    }
     &__img{
-        width: 31%;
-        aspect-ratio: 311 / 203;
-        margin-right: 5%;
+        width: 100%;
+        aspect-ratio: 335 / 203;
+        margin-right: 0;
+        margin-bottom: rem(30);
         img{
             display: block;
             width: 100%;
@@ -120,7 +202,7 @@
         }
     }
     &__text{
-        width: 61%;
+        width: 100%;
         font-size: clamp(16px, calc(4.6vw + 1px), 18px);
         display: flex;
         justify-content: center;
@@ -129,10 +211,9 @@
         font-weight: 900;
     }
     &__logo{
-        width: 61%;
+        width: 90%;
         margin: 0 auto;
         margin-top: rem(60);
-        max-width: rem(610);
         position: relative;
         &::before{
             position: absolute;
@@ -150,14 +231,14 @@
             background-color: #eb6100;
             width: 4px;
             height: 50px;
-            left: 52.5%;
+            left: 52%;
             bottom: -175px;
-            transform: rotate(45deg);
+            transform: translate(50%, 0) rotate(45deg);
 
         }
     }
     &__img02{
-        width: 65.8%;
+        width: 95%;
         margin: 0 auto;
         aspect-ratio: 818 / 356;
         img{
@@ -168,27 +249,70 @@
         }
 
     }
-
-}
-
-.bg-orange-triangle{
-    padding: 50px;
-    background-color: rgba($color: #F39801, $alpha: 0.15);
-    position: relative;
     &::before{
-    content: "";
-    position: absolute;
-    height: 0px;
-    width: 100%;
-    clip-path: polygon(0 0,50% 100%,100% 0);/* ココ */
-    background-color: rgba($color: #F39801, $alpha: 0.15);
-    left: 0;
-    bottom: -100px;    
+        position: absolute;
+		content: "";
+		width: 100%;
+        background-color: #fff;
+		height: 60px;
+		position: absolute;
+		bottom: 0px;
+		clip-path: polygon(0% 0%, 0% 100%, 50% 100%);
+	}
+	&::after{
+		content: "";
+		width: 100%;
+		height: 60px;
+        background-color: #fff;
+		position: absolute;
+		bottom: 0px;
+		clip-path: polygon(50% 100%, 100% 0%, 100% 100%);
     }
-}
 
-.bg-white-path {
-   padding: 200px;
-   background: #fff;
 
 }
+.knowledge-h4-wrapper{
+    padding-top: rem(120);
+}
+
+@include mq (){
+    .process-contents03{
+        padding-top: rem(120);
+        padding-bottom: rem(120);
+        &__logo{
+            width: 61%;
+            max-width: rem(610);
+            &::after{
+                left: 50%;
+                transform: translate(350%, 0) rotate(45deg);
+               
+                
+            }
+        }
+        .col-2{
+            flex-direction: row;
+        }
+        &__heading{
+            width: 71.3%;
+        }
+        &__img{
+            width: 31%;
+            aspect-ratio: 311 / 203;
+            margin-right: 5%;
+            margin-bottom: 0;
+        }
+        &__text{
+            width: 61%;
+        }
+        &__img02{
+            width: 65.8%;
+        }
+    }
+    
+}
+
+
+
+
+
+

@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .points{
-    padding-top: rem(120);
-    padding-bottom: rem(120);
+    padding-top: rem(60);
+    padding-bottom: rem(60);
     &__title{
         color: #fff;
         text-align: center;
@@ -14,20 +14,23 @@
 
 .points-group03{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: rem(30);
 }
 
 .point{
+    max-width: rem(313);
     background-image: url(../images/knowledge/Knowledge-3point-bg.png);
-    background-position: center;
+    background-position: top;
     background-size: cover;
-    aspect-ratio: 313 / 436;
     padding-top: rem(20);
-    margin-right: rem(30);
+    margin-right: 0;
+    margin: 0 auto;
     border-radius: rem(15);
+    aspect-ratio: 313 / 436;
     &__lavel{
         width: fit-content;
+        height: 36px;
         background-color: rgba(235, 97, 0);
         color: #fff;
         padding-left: rem(15);
@@ -38,12 +41,13 @@
         margin-bottom: rem(20);
         &::after{
             content: "";
+            height: 100%;
             position: absolute;
             top: 0;   /* 縦軸をセンタリングする */ 
             right: 0;
             transform: translate(100%,0);   /* 縦軸をセンタリングする */  
-            border: 15px solid transparent;
-            border-left: 12px solid rgba(235, 97, 0);   /* 好みで色を変えてください */  
+            border: 17px solid transparent;
+            border-left: 17px solid rgba(235, 97, 0);   /* 好みで色を変えてください */  
         }
 
     }
@@ -61,5 +65,52 @@
         color: rgba(235, 97, 0);
         font-size: rem(16);
         font-weight: 700;
+    }
+}
+.point-03{
+    aspect-ratio: 313 / 332;
+
+}
+
+@include mq (){
+    .points{
+        padding-top: rem(120);
+        padding-bottom: rem(120);
+    }
+    .points-group03{
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(30);
+    }
+    .point{
+        aspect-ratio: 313 / 436;
+        &__lavel{
+            width: fit-content;
+            height: 36px;
+            background-color: rgba(235, 97, 0);
+            color: #fff;
+            padding-left: rem(15);
+            padding-top: rem(5);
+            padding-right: rem(5);
+            font-family: "Roboto", sans-serif;
+            font-size: rem(24);
+            position: relative;
+            margin-bottom: rem(20);
+            &::after{
+                content: "";
+                height: 100%;
+                position: absolute;
+                top: 0;   /* 縦軸をセンタリングする */ 
+                right: 1px;
+                transform: translate(100%,0);   /* 縦軸をセンタリングする */  
+                border: 17px solid transparent;
+                border-left: 17px solid rgba(235, 97, 0);   /* 好みで色を変えてください */  
+            }
+    
+        }
+        
+    }
+    .point-03{
+        aspect-ratio: 313 / 436;
+
     }
 }

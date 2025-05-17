@@ -89,21 +89,21 @@
             background-color: rgba(235, 97, 0);
             color: #fff;
             padding-left: rem(15);
-            padding-top: rem(5);
             padding-right: rem(5);
             font-family: "Roboto", sans-serif;
             font-size: rem(24);
             position: relative;
+            line-height: 36px;
             margin-bottom: rem(20);
             &::after{
                 content: "";
                 height: 100%;
                 position: absolute;
                 top: 0;   /* 縦軸をセンタリングする */ 
-                right: 1px;
+                right: 0;
                 transform: translate(100%,0);   /* 縦軸をセンタリングする */  
-                border: 17px solid transparent;
-                border-left: 17px solid rgba(235, 97, 0);   /* 好みで色を変えてください */  
+                border: 18px solid transparent;
+                border-left: 18px solid rgba(235, 97, 0);   /* 好みで色を変えてください */  
             }
     
         }

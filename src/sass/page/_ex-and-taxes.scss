@@ -1,12 +1,16 @@
 @use "global" as *;
 
 .ex-and-taxes{
+    padding-top: rem(100);
     padding-bottom: rem(80);
     &__heading{
         text-align: center;
         color: rgba(235, 97, 0);
         margin-top: rem(80);
         margin-bottom: rem(30);
+    }
+    &__heading02{
+        padding-top: rem(100);
     }
 }
 
@@ -31,9 +35,7 @@
         width: 25%;
         border-left: 1px solid rgba(235, 97, 0);
         border-bottom: 1px solid rgba(235, 97, 0);
-        padding-top: rem(18);
-        padding-bottom: rem(18);
-        padding-left: rem(10);
+        padding: rem(18) rem(10);
     }
     &__text{
         width: 75%;
@@ -46,6 +48,7 @@
     }
     
 }
+
 .ex-and-taxes-table__item--end{
     .ex-and-taxes-table__heading{
         border-bottom-left-radius: rem(15);
@@ -63,6 +66,12 @@
 
 }
 @include mq (){
+    .ex-and-taxes{
+        padding-top: rem(160);
+        &__heading02{
+        padding-top: rem(120);
+    }
+    }
     .ex-and-taxes-table{
         &__title{
             padding: rem(25) rem(30);

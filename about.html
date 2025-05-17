@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>アルカンジュ不動産</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="./js/script_fixed.js"></script>
+    <!-- <script defer src="./js/slider.js"></script> -->
+</head>
+<body>
+    <header>
+      <!-- ----------------------------->
+      <!--        PC版　ヘッダー       -->
+      <!-- ----------------------------->
+      <header class="header-pc inner-1920 sp-none">
+        <div class="header-top">
+          <h1 class="logo header-top__logo">
+            <figure>
+              <img src="./images/common/logo.png" alt="アルカンジュ不動産のロゴ画像">
+            </figure>
+          </h1>
+          <div class="header-top__right">
+            <div class="header-top__tel">
+              <div class="header-top__name jpfont-13-normal font-color-bk">
+                お電話での問い合わせ
+              </div>
+              <div class="header-top__btn--tel egfont-19-normal font-color-bk">
+                <a href="tel:0120505642">
+                  <img src="./images/common/header-tel.png" alt="電話のアイコン">
+                  <span class="egfont-19-normal font-color-bk">0120-565-642</span>
+                </a>
+              </div>
+              <div class="header-top__opentime jpfont-18-normal">
+                <span class="jpfont-13-normal font-color-bk">平日：</span>
+                <span class="egfont-13-normal font-color-bk">9:00～17:00</span>
+            
+              </div>
+            </div>
+            <div class="header-top__saiyo">
+              <div class="btn bg-orange-btn header-top__btn header-top__btn--saiyo ">
+                <a href="">
+                  <span class="jpfont-13-normal ">採用情報</span>
+                </a>
+              </div>
+            </div>
+            <div class="header-top__contact">
+              <div class="header-top__name jpfont-13-normal font-color-bk">
+                メールでの問い合わせ
+              </div>
+              <div class="btn bg-orange-btn header-top__btn header-top__btn--contact">
+                <a href="">
+                  <span class="jpfont-13-normal">お問い合わせ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav header-nav-pc">
+          <div class="header-nav__item header-nav__item--home">
+            <a href="" class="egfont-12-normal font-color-bk">
+              HOME
+            </a>
+          </div>
+          <div class="header-nav__item">
+            <a href="page-Buying.html"  class="jpfont-12-normal font-color-bk">
+              不動産を買う　▼
+            </a>
+          </div>
+          <div class="header-nav__item">
+            <a href="" class="jpfont-12-normal font-color-bk">
+              不動産を売る　▼
+            </a>
+          </div>
+          <div class="header-nav__item">
+            <a href="" class="jpfont-12-normal font-color-bk">
+              不動産を借りる
+            </a>
+          </div>
+          <div class="header-nav__item">
+            <a href="" class="jpfont-12-normal font-color-bk">
+              私たちの強み
+            </a>
+          </div>
+          <div class="header-nav__item">
+            <a href="" class="jpfont-12-normal font-color-bk">
+              会社案内
+            </a>
+          </div>
+          <div class="header-nav__item header-nav__item--end">
+            <a href="" class="jpfont-12-normal font-color-bk">
+              プライバシーポリシー
+            </a>
+          </div>
+        </div>
+    </header>
+    <!-- ----------------------------->
+    <!--        sp版　ヘッダー       -->
+    <!-- ----------------------------->
+    <div class="header-sp pc-none">
+      <div class="header-sp__wrapper">
+        <h1 class="logo header-sp__logo">
+          <figure>
+            <img src="./images/topsp/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+        </h1>
+        <div class="drawer-menu" id="MenuButton">
+          <div class="drawer-menu__btn" >
+            <span class="drawer-menu__btn--line"></span>
+            <span class="drawer-menu__btn--line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <div class="header-sp-nav  js-drawer-open">
+      <ul class="header-sp-nav__list">
+        <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal">不動産を買う</a></li>
+        <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal">不動産を売る</a></li>
+        <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal">不動産を借りる</a></li>
+        <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal">私たちの強み</a></li>
+        <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal">会社案内</a></li>
+        <li class="header-sp-nav__item"><a href="" class="jpfont-14-normal">プライバシーポリシー</a></li>
+      </ul>
+      <div class="header-sp-top__right">
+        <div class="header-sp-top__tel">
+          <div class="header-sp-top__name jpfont-13-normal font-color-bk">
+            お電話での問い合わせ
+          </div>
+          <div class="header-top__btn--tel egfont-19-normal font-color-bk">
+            <a href="tel:0120505642">
+              <img src="./images/common/header-tel.png" alt="電話のアイコン">
+              <span class="egfont-19-normal font-color-bk">0120-565-642</span>
+            </a>
+          </div>
+          <div class="header-top__opentime jpfont-18-normal">
+            <span class="jpfont-13-normal font-color-bk">平日：</span>
+            <span class="egfont-13-normal font-color-bk">9:00～17:00</span>
+        
+          </div>
+        </div>
+        <div class="header-top__contact header-sp-top__contact">
+          <div class="header-top__name jpfont-13-normal font-color-bk">
+            メールでの問い合わせ
+          </div>
+          <div class="btn bg-orange-btn header-top__btn header-top__btn--contact">
+            <a href="">
+              <!-- <img src="./images/common/header-mail.png" alt="メールお問い合わせの画像"> -->
+              <span class="jpfont-13-normal">お問い合わせ</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-top__saiyo header-sp-top__saiyo">
+          <div class="btn bg-orange-btn header-top__btn header-top__btn--saiyo ">
+            <a href="">
+              <span class="jpfont-13-normal ">採用情報</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+    <!-- パンくず -->
+    <div class="breadcrumb bg-orange">
+      <ul class="breadcrumb__unit inner-1200">
+        <li class="breadcrumb__list">
+          <a href="">
+              HOME
+          </a>
+        </li>
+        <li class="breadcrumb__list">
+          <a href="">
+              会社概要
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <!-- ----------------------------->
+    <!--     　 メインビュー   　    -->
+    <!-- ----------------------------->
+    <section class="mv">
+      <figure class="mv__img">
+        <img src="/images/about/about-fv.png" alt="メインビューの画像">
+      </figure>
+    </section>
+    <!-- ----------------------------->
+    <!--  ファーストビュー下のバナー   -->
+    <!-- ----------------------------->
+    <section class="fv-banners">
+        <div class="inner-900">
+            <ul class="fv-banner fv-banner-3">
+                <li class="fv-banner__list">
+                    <a href="#mission">
+                        <img class="pc-img" src="./images/about/about-fv__banner01.png" alt="経営理念の画像">
+                        <img class="sp-img" src="./images/about/about-fv__banner-sp01.png" alt="経営理念の画像">
+                    </a>
+                </li>
+                <li class="fv-banner__list">
+                    <a href="#about">
+                        <img class="pc-img" src="./images/about/about-fv__banner02.png" alt="会社概要の画像">
+                        <img class="sp-img" src="./images/about/about-fv__banner-sp02.png" alt="会社概要の画像">
+                    </a>
+                </li>
+                <li class="fv-banner__list">
+                    <a href="#CSR">
+                        <img class="pc-img" src="./images/about/about-fv__banner03.png" alt="社会活動の画像">
+                        <img class="sp-img" src="./images/about/about-fv__banner-sp03.png" alt="社会活動の画像">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ----------------------------->
+    <!--    　　経営理念　　　　　　  -->
+    <!-- ----------------------------->
+    <section class="mission" id="mission">
+        <div class="inner-1000">
+            <h2 class="section__title text-center">
+                <div class="section__title--eg egfont-108-black">Mission</div>
+                <div class="section__title--jp jpfont-36-black font-color-or">～アルカンジュ不動産 経営理念～</div>
+            </h2>
+            <div class="mission__contents">
+                <div class="mission__text text-center">
+                    私たちは、幸せを生み、幸せを創り、幸せにする。<br>
+                    私たちは、宅地・住宅販売を通じてお客様を幸せにすることが使命である。<br>
+                    この考えを基に、お客様がより楽しく豊かで<br>
+                    幸せな住まい探しが出来るお手伝いをさせて頂きます。
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------->
+    <!--    　　会社概要　　　　　　  -->
+    <!-- ----------------------------->
+    <section class="about" id="about">
+        <div class="inner-1000">
+            <h2 class="section__title text-center">
+                <div class="section__title--eg egfont-108-black">About</div>
+                <div class="section__title--jp jpfont-36-black font-color-or">会社概要</div>
+            </h2>
+                <table class="residence-detail-table residence__orange-bg">
+                    <tr class="residence-detail-table__item residence-detail-table__item--first">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh jpfont-18-bold  font-color-wh ">会社名</th>
+                        <td class="residence-detail-table__body jpfont-18-bold  font-color-bk">株式会社アルカンジュ不動産</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">所在</th>
+                        <td class="residence-detail-table__body">
+                            本店<br>
+                            〒264-0020　千葉県千葉市若葉区貝塚2-3-41 クレスト101<br>
+                            千葉店<br>
+                            〒260-0017　千葉県千葉市中央区要町14-12 １号室
+                        </td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">TEL&FAX</th>
+                        <td class="residence-detail-table__body">
+                            本店<br>
+                            TEL：043-310-5642　フリーダイヤル：0120-505-642　FAX：043-310-5396 <br>
+                            千葉店<br>
+                            TEL：043-441-6996　フリーダイヤル：0120-973-451　FAX：043-441-6997
+                        </td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">MAIL</th>
+                        <td class="residence-detail-table__body">
+                            <span>本店<a href="">info@archange.co.jp</a></span>
+                            <span>千葉店<a href="">chiba@archange.co.jp</a></span>
+                        </td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">設立</th>
+                        <td class="residence-detail-table__body">平成24年11月2日</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">従業員数</th>
+                        <td class="residence-detail-table__body">本店17名　千葉店5名</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">事業内容</th>
+                        <td class="residence-detail-table__body">
+                            不動産の売買・賃貸管理及びその仲介業<br>
+                            不動産に関するコンサルティング業<br>
+                            土木工事の請負業<br>
+                            宅地造成に関する設計・施工及び監理<br>
+                            土地の測量及び、建物の診断<br>
+                            資産運用、資産設計に関するコンサルティング業<br>
+                            住宅ローン取次に関する業務<br>
+                            信用保証業務<br>
+                            全各号に付帯関連する一切の業務<br>
+                        </td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">施工エリア</th>
+                        <td class="residence-detail-table__body">千葉県全域</td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">当社分譲区画数</th>
+                        <td class="residence-detail-table__body">
+                            2017年　12宅地<br>
+                            2018年　16宅地<br>
+                            2019年　30宅地<br>
+                            2020年　35宅地<br>
+                            2021年　38宅地<br>
+                            2022年　40宅地<br>
+                            2023年　51宅地
+                        </td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">免許</th>
+                        <td class="residence-detail-table__body">
+                            （公社）全国宅地建物取引業保証協会会員<br>
+                            （公社）首都圏不動産公正取引協議会加盟店<br>
+                            （一社）千葉県宅地建物取引業協会会員<br>
+                            千葉県知事免許（3）第16458号<br>
+                        </td>
+                    </tr>
+                    <tr class="residence-detail-table__item">
+                        <th class="residence-detail-table__head jpfont-18-bold  font-color-wh">取引銀行</th>
+                        <td class="residence-detail-table__body">
+                            千葉銀行<br>
+                            千葉興業銀行<br>
+                            佐原信用金庫<br>
+                            京葉銀行<br>
+                            千葉信用金庫<br>
+                        </td>
+                    </tr>                   
+                </table>
+            <div class="about__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.9240439513383!2d140.14733977608145!3d35.62959897260399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228524ff07bacd%3A0x9e07c61762e37ce3!2z44CSMjY0LTAwMjAg5Y2D6JGJ55yM5Y2D6JGJ5biC6Iul6JGJ5Yy66LKd5aGa77yS5LiB55uu77yT4oiS77yU77yRIOOCr-ODrOOCueODiA!5e0!3m2!1sja!2sjp!4v1747451974050!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------->
+    <!--    　　社会活動　　　　　　  -->
+    <!-- ----------------------------->
+    <section class="CSR" id="CSR">
+        <div class="inner-1000">
+            <h2 class="section__title text-center">
+                <div class="section__title--eg egfont-108-black">CSR</div>
+                <div class="section__title--jp jpfont-36-black font-color-or">社会活動</div>
+            </h2>
+            <div class="CSR__contents text-center">
+                <h4 class="CSR__heading">明るい未来の為に</h4>
+                <div class="CSR__text ">
+                    アルカンジュ不動産は地域の皆様に支えられ、ここまで来ることが出来ました。<br>
+                    地域企業としての役割を果たしていく為にも、<br>
+                    社会活動に取り組み、これからは『地域の皆様と共に未来を築いていく』<br>
+                    その様な企業を目指します。
+                </div>
+            </div>
+        </div>
+        <div class="CSR__contents02">
+            <div class="inner-1000">
+                <div class="CSR__contents02-wrapper">
+                    <h4 class="CSR__heading">皆が助け合える社会へ</h4>
+                    <div class="CSR__text">
+                        国際社会では一部地域における侵略、それに伴う物価上昇問題 <br>
+                        国内では新型ウィルスの終息目途もたたず。<br>
+                        そんな世の中だからこそ、皆で手を取り合って進みたい。<br>
+                        日本全体は無理であっても、まずは身の回りから。<br>
+                        一人一人の意識が変われば、きっと社会は良くなる。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------->
+    <!--    　私たちの活動　　　　　  -->
+    <!-- ----------------------------->
+    <section class="Activities vivid-orange" id="Activities">
+        <div class="inner-1000">
+            <h2 class="section__title  section__title--news text-center">
+                <div class="section__title--eg egfont-92-black font-color-wh--13">Our Activities</div>
+                <div class="section__title--jp jpfont-36-black font-color-wh">私たちの活動</div>
+            </h2>
+            <ul class="points-group03">
+                <li class="activity">
+                    <figure class="activity__img">
+                        <img src="./images/about/our-activity__01.png" alt="">
+                    </figure>
+                    <h4 class="activity__heading activity__heading--br ">
+                        『未来みらいをつくる』<br>
+                        プロジェクト
+                    </h4>
+                    <h4 class="activity__text">
+                        皆様から頂いた物件代金もしくは仲介手数料の一部を千葉県児童福祉協議会様へ微力ながら寄付を行っております。
+                    </h4>
+                </li>
+                <li class="activity">
+                    <figure class="activity__img">
+                        <img src="./images/about/our-activity__02.png" alt="">
+                    </figure>
+                    <h4 class="activity__heading">
+                        『夢応援』プロジェクト
+                    </h4>
+                    <h4 class="activity__text">
+                        少年ラグビーチームへの寄贈・活動費の一部を支援しております。
+                    </h4>
+                    <figure class="activity__logo">
+                        <img src="./images/about/ragby-team__logo.png" alt="">
+                    </figure>
+
+                </li>
+                <li class="activity">
+                    <figure class="activity__img">
+                        <img src="./images/about/our-activity__03.png" alt="">
+                    </figure>
+                    <h4 class="activity__heading">地域活性化を目指して！</h4>
+                    <h4 class="activity__text">
+                        千葉ロッテマリンズを応援しています。当社にて不動産売買ご成約のお客様は、ZOZOスタジアム観戦チケットを差し上げております。<br>
+                        ※１シートのみのご案内となります。重複した場合は先着順となりますのでご了承ください。
+                    </h4>
+                </li>
+            </ul>
+
+            
+        </div>
+    </section>
+
+    <!-- ----------------------------->
+    <!--    　フッター上のバナー　　  -->
+    <!-- ----------------------------->
+    <section class="banner">
+      <div class="inner-1200">
+        <ul class="banner__unit">
+          <li class="banner__list">
+            <img src="./images/TOP/banner01.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner02.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner03.jpg" alt="">
+          </li>
+          <li class="banner__list">
+            <img src="./images/TOP/banner04.jpg" alt="">
+          </li>
+        </ul>
+        
+      </div>
+    </section>
+  </main>
+    <!-- ----------------------------->
+    <!--    　フッター　　　　　　　  -->
+    <!-- ----------------------------->
+  <footer class="footer bg-orange">
+    <div class="footer__wrapper inner-1200">
+      <div class="pagetop">
+        <a href="#">
+          <img src="./images/common/page-top.png" alt="">
+        </a>
+      </div>
+      <div class="footer__contents">
+        <div class="footer__left">
+          <figure class="logo footer__logo">
+            <img src="./images/common/logo.png" alt="アルカンジュ不動産のロゴ画像">
+          </figure>
+          <div class="footer__sns sp-none">
+            <figure class="footer__icon footer__icon--instagram">
+              <a href="">
+                <img src="./images/common/Instagram_icon.png" class="footer__iconimg" alt="インスタグラムのアイコン画像">
+              </a>
+            </figure>
+            <figure class="footer__icon footer__icon--line">
+              <a href="">
+                <img src="./images/common/LINE_icon.png" class="footer__iconimg" alt="インスタグラムのライン画像">
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="footer__shopinfo">
+          <div class="footer__address jpfont-18-bold font-color-bk">〒264-0020　<span class="sp-br">千葉県千葉市若葉区貝塚2-3-41 クレスト101</span></div>
+          <div class="footer__tel jpfont-18-bold font-color-bk">TEL.043-310-5642　<br> フリーダイヤル：0120-505-642</div>
+        </div>
+        <div class="footer__sns pc-none">
+          <figure class="footer__icon footer__icon--instagram">
+            <a href="">
+              <img src="./images/common/Instagram_icon.png" class="footer__iconimg" alt="インスタグラムのアイコン画像">
+            </a>
+          </figure>
+          <figure class="footer__icon footer__icon--line">
+            <a href="">
+              <img src="./images/common/LINE_icon.png" class="footer__iconimg" alt="インスタグラムのライン画像">
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- サイトマップ -->
+    <div class="footer-nav inner-1200">
+      <ul class="footer-nav__unit colum-04">
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk font-color-bk">HOME</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産を買う</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産を売る</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">私たちの強み</span>
+            </a>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">会社案内</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">社会活動</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">代表者メッセージ</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">スタッフ紹介</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">スタッフブログ</span>
+            </a>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産売買の基礎知識</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">不動産購入までの流れ</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">諸経費と税金</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">ご紹介可能建築業者様</span>
+            </a>
+          </li>
+        </div>
+        <div class="colum-04__list">
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">採用情報</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">プライバシーポリシー</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">お問い合わせ</span>
+            </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="">
+              <span class="footer-nav__text jpfont-16-bold font-color-bk">お知らせ</span>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="copyright">
+      <span class="copyright__text font-color-wh ">Copyright &copy;Archange, All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>

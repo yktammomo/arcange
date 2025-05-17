@@ -153,7 +153,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: rem(20);    
-    margin-bottom: rem(60);
+    // margin-bottom: rem(60);
     li {
       width: 100%; // ←各アイテムがセル内で収まるように
     }
@@ -169,7 +169,7 @@
         width: 90%;
         grid-template-columns: repeat(3,1fr);
         margin-top: rem(80);
-        margin-bottom: rem(138);
+        // margin-bottom: rem(138);
          // PCでは中央寄せを解除
         li:nth-child(3) {
             grid-column: auto;
